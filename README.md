@@ -1,4 +1,4 @@
-<img width="135" height="135" alt="image" src="https://github.com/user-attachments/assets/c0ca1845-c568-42f8-b0b5-4800176069e0" align="left" style="z-index: 999;" />
+<img width="136" height="136" alt="image" src="https://github.com/user-attachments/assets/c0ca1845-c568-42f8-b0b5-4800176069e0" align="left" style="z-index: 999;" />
 
 # System Integration - Spring 2026
 ## PBA Software Development
