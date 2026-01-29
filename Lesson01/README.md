@@ -3,7 +3,7 @@
 # Lesson 1 - 29 January
 
 ### In-class exercise
-[Software Architectures](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson01/Ex%2001%20Software%20Architectures.md)
+- [Software Architectures](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson01/Ex%2001%20Software%20Architectures.md)
 
 ### Homework
 - Check out the slide set **Software Architectures**. Make sure that you understand the architectures' and patterns' main pros and cons, and when to apply each
