@@ -1,7 +1,7 @@
 ### Software Architectures
 Work in groups of 5.
 
-Match the following scenarios to the software architecture(s) that best fit them (monolith, N-tier, SOA, microservices, serverless, peer-to-peer):
+Match the following scenarios to the software architecture(s) that best fit them (monolith, N-tier, Enterprise SOA, microservices, serverless, peer-to-peer):
 
 1. **Eksaminator**. Online exam submission system  
     The platform is used by students to upload assignments and by teachers to grade. Requirements:
