@@ -2,6 +2,8 @@
 
 # Lesson 2 - 5 February
 
+[Exam Project arrangement with Tomas]: #
+
 [Solution Application Patterns exercise]: #
 [UI patterns]: #
 [MVC demo]: #
