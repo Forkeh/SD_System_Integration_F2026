@@ -3,7 +3,11 @@
 # Lesson 2 - 5 February
 
 [Solution Application Patterns exercise]: #
-[ROLL CALL]: #
+[UI patterns]: #
+[MVC demo]: #
+
+[SOA slides]: #
+[SOA in-class exercise]: #
 
 [### In-class exercises]: #
 [- Service-Oriented Architecture(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/Ex%2001%20SOA.md)]: #
@@ -13,6 +17,8 @@
 
 [### Homework]: #
 [- Check out the following slide sets:]: #
+[  - **Software Architectures**, focused on the section *UI Patterns*]: #
+[    - Check out this sample implementation of the MVC pattern: Library(https://github.com/arturomorarioja/php_library_mvc)]: #
 [  - **Service-Oriented Architecture**. Make sure that you understand:]: #
 [    - How what we call SOA today differentiates from the traditional Enterprise SOA pattern (the one that requires an ESB and that is associated to integrations with legacy systems)]: #
 [    - How web services are a way of implementing modern SOA]: #
