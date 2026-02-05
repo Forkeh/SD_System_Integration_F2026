@@ -2,29 +2,26 @@
 
 # Lesson 2 - 5 February
 
-[Exam Project arrangement with Tomas]: #
-
-[Solution Application Patterns exercise]: #
-[UI patterns]: #
-[MVC demo]: #
-
 [SOA slides]: #
 [Maybe show API Consumption sample. My FE is the consumer, the 3 services are the providers, there is no broker(responsibility divided between API listings and my FE code)]: #
 [SOA in-class exercise]: #
 
-[### In-class exercises]: #
-[- Service-Oriented Architecture(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/Ex%2001%20SOA.md)]: #
+### In-class exercises
+- [Service-Oriented Architecture](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/Ex%2001%20SOA.md)
+  
 [- TXT File Parsing(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/Ex%2002%20TXT%20File%20Parsing.md)]: #
 [- CSV File Parsing(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/Ex%2003%20CSV%20File%20Parsing.md)]: #
 [- YAML File Parsing(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/Ex%2004%20YAML%20File%20Parsing.md)]: #
 
-[### Homework]: #
-[- Check out the following slide sets:]: #
-[  - **Software Architectures**, focused on the section *UI Patterns*]: #
-[    - Check out this sample implementation of the MVC pattern: Library(https://github.com/arturomorarioja/php_library_mvc)]: #
-[  - **Service-Oriented Architecture**. Make sure that you understand:]: #
-[    - How what we call SOA today differentiates from the traditional Enterprise SOA pattern (the one that requires an ESB and that is associated to integrations with legacy systems)]: #
-[    - How web services are a way of implementing modern SOA]: #
+### Homework
+- Check out the following slide sets:
+  - **Software Architectures**, focused on the section *UI Patterns*
+    - Check out this sample implementation of the MVC pattern: [Library](https://github.com/arturomorarioja/php_library_mvc)
+  - **Service-Oriented Architecture**. Make sure that you understand:
+    - How what we call SOA today differentiates from the traditional Enterprise SOA pattern (the one that requires an ESB and that is associated to integrations with legacy systems)
+    - How web services are a way of implementing modern SOA
+    - Check out the following SOA application that has a web application call three services (weather, map, and events): [API consumption](https://github.com/arturomorarioja/api_consumption_app)
+      
 [  - **File Formats**, especially.]: #
 [    - The difference between binary and text files]: #
 [    - The difference between markup language files (e.g., XML-based, LaTex, Markdown), data serialisation files (e.g., JSON, YAML) and other types of text files (e.g., CSV)]: #
