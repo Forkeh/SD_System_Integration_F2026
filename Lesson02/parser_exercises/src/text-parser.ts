@@ -1,10 +1,10 @@
 import fs from 'node:fs';
 
 class TxtParser {
-	readonly filePath: string;
-	readonly rowDelimiter = '~';
-	readonly fieldDelimiter = '|';
-	readonly endDelimiter = '#EOF#';
+	private readonly filePath: string;
+	private readonly rowDelimiter = '~';
+	private readonly fieldDelimiter = '|';
+	private readonly endDelimiter = '#EOF#';
 
 	constructor(filePath: string) {
 		this.filePath = filePath;
@@ -13,27 +13,33 @@ class TxtParser {
 	async txtToJson() {
 		const companiesArr: txtType[] = [];
 
-		const textContent = fs.readFileSync(this.filePath, 'utf8').trim().replace(this.endDelimiter, '');
+		try {
+			const textContent = fs.readFileSync(this.filePath, 'utf8').trim().replace(this.endDelimiter, '');
 
-		const rows = textContent.split(this.rowDelimiter);
+			const rows = textContent.split(this.rowDelimiter);
 
-		rows.forEach((row) => {
-			const currRow = row.split(this.fieldDelimiter);
+			rows.forEach((row) => {
+				const currRow = row.split(this.fieldDelimiter);
 
-			const txtOutputJson: txtType = {
-				cvr: currRow[0],
-				full_name: currRow[1],
-				street: currRow[2],
-				number: currRow[3],
-				postal_code: currRow[4],
-				city: currRow[5],
-				email: currRow[6],
-			};
+				const txtOutputJson: txtType = {
+					cvr: currRow[0],
+					full_name: currRow[1],
+					street: currRow[2],
+					number: currRow[3],
+					postal_code: currRow[4],
+					city: currRow[5],
+					email: currRow[6],
+				};
 
-			companiesArr.push(txtOutputJson);
-		});
+				companiesArr.push(txtOutputJson);
+			});
 
-		return companiesArr;
+			return companiesArr;
+		} catch (error) {
+			console.error('Failed to parse TXT file:', error instanceof Error ? error.message : String(error));
+
+			throw error;
+		}
 	}
 }
 
