@@ -37,6 +37,51 @@ app.get('/api/companies/csv', async (req, res) => {
 	}
 });
 
+// Get Repos by Username
+app.get('/api/github/:username/repos', async (req, res) => {
+	const { username } = req.params;
+
+	try {
+		const response = await fetch(`https://api.github.com/users/${username}/repos`);
+
+		const result = await response.json();
+
+		res.json(result);
+	} catch (error) {
+		res.status(500).json({ error: 'Failed to get user repositories' });
+	}
+});
+
+// Get Files by Repo
+app.get('/api/github/:username/:repo/files', async (req, res) => {
+	const { username, repo } = req.params;
+
+	try {
+		const response = await fetch(`https://api.github.com/repos/${username}/${repo}/contents`);
+
+		const result = await response.json();
+
+		res.json(result);
+	} catch (error) {
+		res.status(500).json({ error: 'Failed to get user repositories' });
+	}
+});
+
+// Display raw file contents
+app.get('/api/github/:username/:repo/:branch/raw/:path(*)', async (req, res) => {
+	const { username, repo, branch, path } = req.params;
+
+	try {
+		const response = await fetch(`https://raw.githubusercontent.com/${username}/${repo}/${branch}/${path}`);
+
+		const result = await response.text();
+
+		res.send(result);
+	} catch (error) {
+		res.status(500).json({ error: 'Failed to get file contents' });
+	}
+});
+
 // Start server
 app.listen(PORT, () => {
 	console.log(`Server is running on http://localhost:${PORT}`);
