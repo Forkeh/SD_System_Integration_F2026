@@ -48,4 +48,7 @@ API output:
 ]
 ```
  
-Use the file [`danish_companies.txt`](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/danish_companies.txt) for testing.
+Use the file [`danish_companies.txt`](https://github.com/arturomorarioja-ek/SD_System_Integration_F26_Materials/blob/main/File%20Formats/Exercises/danish_companies.txt) for testing.
+
+### Solution
+[Python](https://github.com/arturomorarioja/py_txt_parser_api)
