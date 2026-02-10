@@ -11,7 +11,6 @@ class TxtParser {
 	}
 
 	async txtToJson() {
-		console.log("I'm parsing here!");
 		const companiesArr: txtType[] = [];
 
 		const textContent = fs.readFileSync(this.filePath, 'utf8').trim().replace(this.endDelimiter, '');
@@ -34,7 +33,7 @@ class TxtParser {
 			companiesArr.push(txtOutputJson);
 		});
 
-		console.log(companiesArr);
+		return companiesArr;
 	}
 }
 

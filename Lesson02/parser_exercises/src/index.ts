@@ -1,7 +1,10 @@
-import { TxtParser } from './parsers';
+import { TxtParser } from './text-parser';
 
-console.log('Hello from TypeScript!');
-
+// ----- Exercise 01 -----
 const textParser = new TxtParser('../danish_companies.txt');
 
-textParser.txtToJson();
+const jsonCompanies = textParser.txtToJson();
+
+console.log(jsonCompanies);
+
+// ----- Exercise 02 -----
