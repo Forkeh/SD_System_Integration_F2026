@@ -1,0 +1,1011 @@
+<?xml version="1.0" encoding="utf-8"?>
+<companies>
+  <company>
+    <cvr>78836568</cvr>
+    <name>Dansk Consult ApS &amp; Co.</name>
+    <street>Parkvej</street>
+    <number>123</number>
+    <postal_code>6700</postal_code>
+    <city>Esbjerg</city>
+    <email>info0@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>67982862</cvr>
+    <name>Viking IT IVS</name>
+    <street>Torvegade</street>
+    <number>132</number>
+    <postal_code>3400</postal_code>
+    <city>Hillerød</city>
+    <email>info1@viking.dk</email>
+  </company>
+  <company>
+    <cvr>97863387</cvr>
+    <name>Københavns Solutions IVS</name>
+    <street>Søndergade</street>
+    <number>114</number>
+    <postal_code>6000</postal_code>
+    <city>Kolding</city>
+    <email>info2@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>42148903</cvr>
+    <name>Jysk IT IVS</name>
+    <street>Nørregade</street>
+    <number>145</number>
+    <postal_code>6000</postal_code>
+    <city>Kolding</city>
+    <email>info3@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>84488399</cvr>
+    <name>Dansk Solutions ApS</name>
+    <street>Vestergade</street>
+    <number>121</number>
+    <postal_code>8000</postal_code>
+    <city>Aarhus</city>
+    <email>info4@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>47263518</cvr>
+    <name>Københavns Consult ApS</name>
+    <street>Hovedgaden</street>
+    <number>103</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info5@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>32104579</cvr>
+    <name>Viking Solutions IVS</name>
+    <street>Parkvej</street>
+    <number>127</number>
+    <postal_code>4800</postal_code>
+    <city>Nykøbing Falster</city>
+    <email>info6@viking.dk</email>
+  </company>
+  <company>
+    <cvr>85361429</cvr>
+    <name>Jysk Solutions IVS</name>
+    <street>Vestergade</street>
+    <number>147</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info7@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>94726183</cvr>
+    <name>Jysk Consult ApS</name>
+    <street>Parkvej</street>
+    <number>129</number>
+    <postal_code>6400</postal_code>
+    <city>Sønderborg</city>
+    <email>info8@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>50648279</cvr>
+    <name>Viking Consult IVS</name>
+    <street>Vestergade</street>
+    <number>107</number>
+    <postal_code>6400</postal_code>
+    <city>Sønderborg</city>
+    <email>info9@viking.dk</email>
+  </company>
+  <company>
+    <cvr>39048275</cvr>
+    <name>Københavns IT ApS &amp; Co.</name>
+    <street>Torvegade</street>
+    <number>131</number>
+    <postal_code>8600</postal_code>
+    <city>Silkeborg</city>
+    <email>info10@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>24861759</cvr>
+    <name>Københavns Solutions ApS &amp; Co.</name>
+    <street>Hovedgaden</street>
+    <number>122</number>
+    <postal_code>8600</postal_code>
+    <city>Silkeborg</city>
+    <email>info11@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>76530914</cvr>
+    <name>Dansk IT ApS</name>
+    <street>Vestergade</street>
+    <number>113</number>
+    <postal_code>6400</postal_code>
+    <city>Sønderborg</city>
+    <email>info12@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>80236495</cvr>
+    <name>Københavns IT ApS</name>
+    <street>Torvegade</street>
+    <number>147</number>
+    <postal_code>4000</postal_code>
+    <city>Roskilde</city>
+    <email>info13@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>63980275</cvr>
+    <name>Viking Consult ApS</name>
+    <street>Parkvej</street>
+    <number>106</number>
+    <postal_code>6200</postal_code>
+    <city>Aabenraa</city>
+    <email>info14@viking.dk</email>
+  </company>
+  <company>
+    <cvr>91027356</cvr>
+    <name>Viking IT ApS &amp; Co.</name>
+    <street>Nørregade</street>
+    <number>147</number>
+    <postal_code>8600</postal_code>
+    <city>Silkeborg</city>
+    <email>info15@viking.dk</email>
+  </company>
+  <company>
+    <cvr>86243759</cvr>
+    <name>Viking Solutions ApS</name>
+    <street>Vestergade</street>
+    <number>145</number>
+    <postal_code>7400</postal_code>
+    <city>Herning</city>
+    <email>info16@viking.dk</email>
+  </company>
+  <company>
+    <cvr>42075836</cvr>
+    <name>Jysk Consult ApS &amp; Co.</name>
+    <street>Hovedgaden</street>
+    <number>133</number>
+    <postal_code>4000</postal_code>
+    <city>Roskilde</city>
+    <email>info17@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>63024719</cvr>
+    <name>Jysk Consult IVS</name>
+    <street>Søndergade</street>
+    <number>111</number>
+    <postal_code>9000</postal_code>
+    <city>Aalborg</city>
+    <email>info18@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>72580463</cvr>
+    <name>Viking Solutions ApS &amp; Co.</name>
+    <street>Hovedgaden</street>
+    <number>107</number>
+    <postal_code>8600</postal_code>
+    <city>Silkeborg</city>
+    <email>info19@viking.dk</email>
+  </company>
+  <company>
+    <cvr>29374658</cvr>
+    <name>Jysk Solutions IVS</name>
+    <street>Parkvej</street>
+    <number>140</number>
+    <postal_code>4000</postal_code>
+    <city>Roskilde</city>
+    <email>info20@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>64928310</cvr>
+    <name>Københavns Solutions ApS</name>
+    <street>Parkvej</street>
+    <number>101</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info21@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>80947356</cvr>
+    <name>Dansk Consult IVS</name>
+    <street>Torvegade</street>
+    <number>129</number>
+    <postal_code>9000</postal_code>
+    <city>Aalborg</city>
+    <email>info22@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>78203564</cvr>
+    <name>Jysk IT ApS</name>
+    <street>Vestergade</street>
+    <number>119</number>
+    <postal_code>8600</postal_code>
+    <city>Silkeborg</city>
+    <email>info23@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>92736485</cvr>
+    <name>Jysk Solutions ApS &amp; Co.</name>
+    <street>Vestergade</street>
+    <number>128</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info24@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>19384756</cvr>
+    <name>Viking Consult ApS &amp; Co.</name>
+    <street>Hovedgaden</street>
+    <number>100</number>
+    <postal_code>6200</postal_code>
+    <city>Aabenraa</city>
+    <email>info25@viking.dk</email>
+  </company>
+  <company>
+    <cvr>60592847</cvr>
+    <name>Dansk Solutions ApS &amp; Co.</name>
+    <street>Parkvej</street>
+    <number>101</number>
+    <postal_code>6200</postal_code>
+    <city>Aabenraa</city>
+    <email>info26@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>81729365</cvr>
+    <name>Jysk IT ApS &amp; Co.</name>
+    <street>Hovedgaden</street>
+    <number>128</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info27@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>39502847</cvr>
+    <name>Viking IT ApS</name>
+    <street>Vestergade</street>
+    <number>149</number>
+    <postal_code>4000</postal_code>
+    <city>Roskilde</city>
+    <email>info28@viking.dk</email>
+  </company>
+  <company>
+    <cvr>56082934</cvr>
+    <name>Jysk IT ApS &amp; Co.</name>
+    <street>Parkvej</street>
+    <number>114</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info29@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>91827365</cvr>
+    <name>Viking IT ApS</name>
+    <street>Søndergade</street>
+    <number>137</number>
+    <postal_code>4000</postal_code>
+    <city>Roskilde</city>
+    <email>info30@viking.dk</email>
+  </company>
+  <company>
+    <cvr>81927364</cvr>
+    <name>Københavns Solutions IVS</name>
+    <street>Søndergade</street>
+    <number>122</number>
+    <postal_code>5700</postal_code>
+    <city>Svendborg</city>
+    <email>info31@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>56473829</cvr>
+    <name>Dansk Solutions ApS</name>
+    <street>Søndergade</street>
+    <number>117</number>
+    <postal_code>4000</postal_code>
+    <city>Roskilde</city>
+    <email>info32@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>90785634</cvr>
+    <name>Viking Consult IVS</name>
+    <street>Hovedgaden</street>
+    <number>135</number>
+    <postal_code>5700</postal_code>
+    <city>Svendborg</city>
+    <email>info33@viking.dk</email>
+  </company>
+  <company>
+    <cvr>84736291</cvr>
+    <name>Viking IT ApS</name>
+    <street>Parkvej</street>
+    <number>120</number>
+    <postal_code>6400</postal_code>
+    <city>Sønderborg</city>
+    <email>info34@viking.dk</email>
+  </company>
+  <company>
+    <cvr>39485726</cvr>
+    <name>Jysk Solutions IVS</name>
+    <street>Torvegade</street>
+    <number>122</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info35@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>75849203</cvr>
+    <name>Jysk IT ApS</name>
+    <street>Torvegade</street>
+    <number>104</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info36@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>82937465</cvr>
+    <name>Dansk Solutions IVS</name>
+    <street>Hovedgaden</street>
+    <number>147</number>
+    <postal_code>5700</postal_code>
+    <city>Svendborg</city>
+    <email>info37@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>56748392</cvr>
+    <name>Jysk Solutions ApS</name>
+    <street>Hovedgaden</street>
+    <number>144</number>
+    <postal_code>5700</postal_code>
+    <city>Svendborg</city>
+    <email>info38@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>47583920</cvr>
+    <name>Jysk Solutions ApS &amp; Co.</name>
+    <street>Søndergade</street>
+    <number>136</number>
+    <postal_code>9000</postal_code>
+    <city>Aalborg</city>
+    <email>info39@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>92837465</cvr>
+    <name>Dansk Consult ApS</name>
+    <street>Søndergade</street>
+    <number>140</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info40@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>74839205</cvr>
+    <name>Viking Consult IVS</name>
+    <street>Vestergade</street>
+    <number>148</number>
+    <postal_code>6400</postal_code>
+    <city>Sønderborg</city>
+    <email>info41@viking.dk</email>
+  </company>
+  <company>
+    <cvr>64738295</cvr>
+    <name>Dansk IT IVS</name>
+    <street>Søndergade</street>
+    <number>144</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info42@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>56473820</cvr>
+    <name>Viking Solutions IVS</name>
+    <street>Parkvej</street>
+    <number>106</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info43@viking.dk</email>
+  </company>
+  <company>
+    <cvr>48592037</cvr>
+    <name>Viking IT IVS</name>
+    <street>Vestergade</street>
+    <number>140</number>
+    <postal_code>6400</postal_code>
+    <city>Sønderborg</city>
+    <email>info44@viking.dk</email>
+  </company>
+  <company>
+    <cvr>39485720</cvr>
+    <name>Dansk IT ApS &amp; Co.</name>
+    <street>Nørregade</street>
+    <number>141</number>
+    <postal_code>5700</postal_code>
+    <city>Svendborg</city>
+    <email>info45@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>29384756</cvr>
+    <name>Københavns Solutions ApS</name>
+    <street>Parkvej</street>
+    <number>136</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info46@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>74638295</cvr>
+    <name>Jysk IT IVS</name>
+    <street>Vestergade</street>
+    <number>132</number>
+    <postal_code>7100</postal_code>
+    <city>Vejle</city>
+    <email>info47@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>64739285</cvr>
+    <name>Dansk IT IVS</name>
+    <street>Hovedgaden</street>
+    <number>120</number>
+    <postal_code>9000</postal_code>
+    <city>Aalborg</city>
+    <email>info48@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>93847562</cvr>
+    <name>Københavns IT IVS</name>
+    <street>Vestergade</street>
+    <number>133</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info49@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>74638290</cvr>
+    <name>Jysk IT ApS</name>
+    <street>Torvegade</street>
+    <number>148</number>
+    <postal_code>4000</postal_code>
+    <city>Roskilde</city>
+    <email>info50@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>48592036</cvr>
+    <name>Viking IT ApS &amp; Co.</name>
+    <street>Parkvej</street>
+    <number>139</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info51@viking.dk</email>
+  </company>
+  <company>
+    <cvr>93847560</cvr>
+    <name>Dansk IT ApS</name>
+    <street>Søndergade</street>
+    <number>105</number>
+    <postal_code>9000</postal_code>
+    <city>Aalborg</city>
+    <email>info52@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>93847561</cvr>
+    <name>Jysk IT IVS</name>
+    <street>Torvegade</street>
+    <number>142</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info53@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>84736290</cvr>
+    <name>Københavns Consult IVS</name>
+    <street>Torvegade</street>
+    <number>130</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info54@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>64738290</cvr>
+    <name>Dansk Solutions IVS</name>
+    <street>Vestergade</street>
+    <number>138</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info55@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>93847563</cvr>
+    <name>Viking Solutions IVS</name>
+    <street>Hovedgaden</street>
+    <number>137</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info56@viking.dk</email>
+  </company>
+  <company>
+    <cvr>74638291</cvr>
+    <name>Jysk Solutions ApS</name>
+    <street>Torvegade</street>
+    <number>137</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info57@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>48592038</cvr>
+    <name>Københavns Consult ApS</name>
+    <street>Søndergade</street>
+    <number>125</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info58@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>84736292</cvr>
+    <name>Viking IT ApS</name>
+    <street>Hovedgaden</street>
+    <number>110</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info59@viking.dk</email>
+  </company>
+  <company>
+    <cvr>64738291</cvr>
+    <name>Dansk Consult IVS</name>
+    <street>Nørregade</street>
+    <number>133</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info60@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>93847564</cvr>
+    <name>Jysk Consult ApS</name>
+    <street>Torvegade</street>
+    <number>124</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info61@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>74638292</cvr>
+    <name>Viking Solutions ApS</name>
+    <street>Parkvej</street>
+    <number>135</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info62@viking.dk</email>
+  </company>
+  <company>
+    <cvr>48592039</cvr>
+    <name>Københavns Solutions ApS &amp; Co.</name>
+    <street>Torvegade</street>
+    <number>113</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info63@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>84736293</cvr>
+    <name>Dansk IT ApS</name>
+    <street>Hovedgaden</street>
+    <number>146</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info64@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>64738292</cvr>
+    <name>Viking IT IVS</name>
+    <street>Nørregade</street>
+    <number>110</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info65@viking.dk</email>
+  </company>
+  <company>
+    <cvr>93847565</cvr>
+    <name>Jysk Consult ApS</name>
+    <street>Hovedgaden</street>
+    <number>139</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info66@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>74638293</cvr>
+    <name>Dansk IT IVS</name>
+    <street>Nørregade</street>
+    <number>116</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info67@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>48592040</cvr>
+    <name>Viking Solutions IVS</name>
+    <street>Søndergade</street>
+    <number>133</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info68@viking.dk</email>
+  </company>
+  <company>
+    <cvr>84736294</cvr>
+    <name>Jysk IT ApS</name>
+    <street>Hovedgaden</street>
+    <number>119</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info69@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>64738293</cvr>
+    <name>Københavns IT ApS &amp; Co.</name>
+    <street>Parkvej</street>
+    <number>111</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info70@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>93847566</cvr>
+    <name>Dansk Solutions ApS</name>
+    <street>Søndergade</street>
+    <number>115</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info71@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>74638294</cvr>
+    <name>Viking Consult ApS</name>
+    <street>Parkvej</street>
+    <number>144</number>
+    <postal_code>2600</postal_code>
+    <city>Glostrup</city>
+    <email>info72@viking.dk</email>
+  </company>
+  <company>
+    <cvr>48592041</cvr>
+    <name>Jysk IT IVS</name>
+    <street>Hovedgaden</street>
+    <number>132</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info73@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>84736295</cvr>
+    <name>Jysk Solutions ApS</name>
+    <street>Parkvej</street>
+    <number>138</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info74@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>64738294</cvr>
+    <name>Dansk IT ApS &amp; Co.</name>
+    <street>Hovedgaden</street>
+    <number>139</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info75@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>93847567</cvr>
+    <name>Viking IT ApS</name>
+    <street>Parkvej</street>
+    <number>134</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info76@viking.dk</email>
+  </company>
+  <company>
+    <cvr>74638295</cvr>
+    <name>Københavns IT ApS</name>
+    <street>Vestergade</street>
+    <number>143</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info77@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>48592042</cvr>
+    <name>Jysk Consult IVS</name>
+    <street>Nørregade</street>
+    <number>129</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info78@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>84736296</cvr>
+    <name>Dansk Solutions ApS &amp; Co.</name>
+    <street>Torvegade</street>
+    <number>115</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info79@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>64738295</cvr>
+    <name>Viking Solutions ApS &amp; Co.</name>
+    <street>Nørregade</street>
+    <number>134</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info80@viking.dk</email>
+  </company>
+  <company>
+    <cvr>93847568</cvr>
+    <name>Jysk Solutions IVS</name>
+    <street>Torvegade</street>
+    <number>139</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info81@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>74638296</cvr>
+    <name>Dansk Consult ApS</name>
+    <street>Parkvej</street>
+    <number>118</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info82@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>48592043</cvr>
+    <name>Københavns IT ApS</name>
+    <street>Vestergade</street>
+    <number>130</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info83@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>84736297</cvr>
+    <name>Viking Solutions ApS</name>
+    <street>Parkvej</street>
+    <number>112</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info84@viking.dk</email>
+  </company>
+  <company>
+    <cvr>64738296</cvr>
+    <name>Jysk IT ApS &amp; Co.</name>
+    <street>Torvegade</street>
+    <number>136</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info85@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>93847569</cvr>
+    <name>Dansk IT ApS</name>
+    <street>Vestergade</street>
+    <number>119</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info86@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>74638297</cvr>
+    <name>Københavns Consult ApS &amp; Co.</name>
+    <street>Torvegade</street>
+    <number>133</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info87@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>48592044</cvr>
+    <name>Viking IT ApS &amp; Co.</name>
+    <street>Søndergade</street>
+    <number>118</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info88@viking.dk</email>
+  </company>
+  <company>
+    <cvr>84736298</cvr>
+    <name>Jysk Solutions ApS &amp; Co.</name>
+    <street>Vestergade</street>
+    <number>125</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info89@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>64738297</cvr>
+    <name>Dansk Solutions IVS</name>
+    <street>Torvegade</street>
+    <number>127</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info90@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>93847570</cvr>
+    <name>Viking Consult IVS</name>
+    <street>Hovedgaden</street>
+    <number>125</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info91@viking.dk</email>
+  </company>
+  <company>
+    <cvr>74638298</cvr>
+    <name>Jysk Solutions IVS</name>
+    <street>Nørregade</street>
+    <number>140</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info92@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>48592045</cvr>
+    <name>Dansk Consult ApS &amp; Co.</name>
+    <street>Parkvej</street>
+    <number>128</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info93@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>84736299</cvr>
+    <name>Københavns Solutions IVS</name>
+    <street>Torvegade</street>
+    <number>120</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info94@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>64738298</cvr>
+    <name>Viking Solutions ApS</name>
+    <street>Søndergade</street>
+    <number>130</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info95@viking.dk</email>
+  </company>
+  <company>
+    <cvr>93847571</cvr>
+    <name>Jysk Consult ApS &amp; Co.</name>
+    <street>Vestergade</street>
+    <number>147</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info96@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>74638299</cvr>
+    <name>Dansk IT IVS</name>
+    <street>Torvegade</street>
+    <number>145</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info97@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>48592046</cvr>
+    <name>Viking IT IVS</name>
+    <street>Parkvej</street>
+    <number>143</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info98@viking.dk</email>
+  </company>
+  <company>
+    <cvr>84736300</cvr>
+    <name>Københavns IT IVS</name>
+    <street>Hovedgaden</street>
+    <number>141</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info99@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>64738299</cvr>
+    <name>Dansk Solutions ApS &amp; Co.</name>
+    <street>Nørregade</street>
+    <number>142</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info100@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>93847572</cvr>
+    <name>Viking Solutions IVS</name>
+    <street>Hovedgaden</street>
+    <number>138</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info101@viking.dk</email>
+  </company>
+  <company>
+    <cvr>74638300</cvr>
+    <name>Jysk IT ApS</name>
+    <street>Søndergade</street>
+    <number>145</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info102@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>48592047</cvr>
+    <name>Dansk Consult ApS</name>
+    <street>Vestergade</street>
+    <number>148</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info103@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>84736301</cvr>
+    <name>Viking Solutions ApS</name>
+    <street>Nørregade</street>
+    <number>148</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info104@viking.dk</email>
+  </company>
+  <company>
+    <cvr>64738300</cvr>
+    <name>Jysk Solutions ApS</name>
+    <street>Hovedgaden</street>
+    <number>143</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info105@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>93847573</cvr>
+    <name>Københavns Consult ApS &amp; Co.</name>
+    <street>Vestergade</street>
+    <number>136</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info106@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>74638301</cvr>
+    <name>Dansk IT ApS</name>
+    <street>Hovedgaden</street>
+    <number>148</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info107@dansk.dk</email>
+  </company>
+  <company>
+    <cvr>48592048</cvr>
+    <name>Viking Consult ApS</name>
+    <street>Vestergade</street>
+    <number>144</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info108@viking.dk</email>
+  </company>
+  <company>
+    <cvr>84736302</cvr>
+    <name>Jysk Consult IVS</name>
+    <street>Parkvej</street>
+    <number>146</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info109@jysk.dk</email>
+  </company>
+  <company>
+    <cvr>64738301</cvr>
+    <name>Københavns Solutions ApS</name>
+    <street>Hovedgaden</street>
+    <number>143</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info110@københavns.dk</email>
+  </company>
+  <company>
+    <cvr>93847574</cvr>
+    <name>Dansk Solutions IVS</name>
+    <street>Vestergade</street>
+    <number>149</number>
+    <postal_code>4700</postal_code>
+    <city>Næstved</city>
+    <email>info111@dansk.dk</email>
+  </company>
+</companies>
