@@ -1,6 +1,6 @@
-### TCP/IP
+### netstat
 
-1. Inspect your computer's local ports and sockets using `netstat`
+Inspect your computer's local ports and sockets using `netstat`
     
     - `netstat -a` shows active and listening TCP connections and UDP ports
     - `netstat -s` displays statistics for TCP, UDP and other protocols like IP and ICMP
