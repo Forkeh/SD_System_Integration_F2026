@@ -2,7 +2,7 @@
 
 # Lesson 3 - 12 February
 
-[Download Message Queues.pptx]: #
+[Download Message Queues.pptx, XML.pptx, TCP/IP.pptx]: #
 [Solutions CSV parsing, YAML parsing, GitHub API]: #
 
 [XML from XSD]: #
