@@ -3,9 +3,6 @@
 # Lesson 3 - 19 February
 
 [Download Message Queues.pptx, XML.pptx, TCP/IP.pptx, Message Queues.pptx]: #
-[Solutions CSV parsing, YAML parsing, GitHub API]: #
-
-[XML from XSD]: #
 
 [TCP/IP]: #
 [Message Queues]: #
@@ -14,3 +11,11 @@
 
 ### In-class exercise
 XSD: [Employees](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/Ex%2001%20Employees%20XSD.md)
+
+### Homework
+- Check out the following slide decks in Itslearning:
+  - **XML**, with special attention to XSD (XML Schema Definition)
+- Do the following exercises:
+  - [CV XSD](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/Ex%2002%20CV%20XSD.md)
+  - [XML File Parsing](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/Ex%2004%20XML%20File%20Parsing.md)
+  - [Employees XSLT](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/Ex%2003%20Employees%20XSLT.md)
