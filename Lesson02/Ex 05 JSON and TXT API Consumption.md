@@ -9,3 +9,6 @@ Use the two following APIs:
   - E.g., https://api.github.com/users/arturomorarioja
 - [GitHub Text API for file content](https://github.com/orgs/community/discussions/44370)
   - E.g., https://raw.githubusercontent.com/arturomorarioja/customers_api/main/customers/customers.sql
+ 
+### Solution
+[Front-end (JavaScript)](https://github.com/arturomorarioja/js_json_and_text_api_consumption)
