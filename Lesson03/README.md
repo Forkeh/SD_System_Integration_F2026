@@ -12,3 +12,5 @@
 
 [HTTP]: #
 
+### In-class exercise
+XSD: [Employees](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/Ex%2001%20Employees%20XSD.md)
