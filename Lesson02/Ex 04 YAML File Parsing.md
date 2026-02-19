@@ -46,4 +46,6 @@ API output:
 ]
 ```
 
-Use [this fake Danish companies YAML file](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/danish_companies.yml) for testing.
+Use [this fake Danish companies YAML file](https://github.com/arturomorarioja-ek/SD_System_Integration_F26_Materials/blob/main/File%20Formats/Exercises/danish_companies.yml) for testing.
+
+**Proposed solution**: [Python](https://github.com/arturomorarioja/py_yaml_parser_api)
