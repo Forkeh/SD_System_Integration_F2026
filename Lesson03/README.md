@@ -3,7 +3,7 @@
 # Lesson 3 - 19 February
 
 ### In-class exercise
-XSD: [Employees](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/Ex%2001%20Employees%20XSD.md)
+- XSD: [Employees](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/Ex%2001%20Employees%20XSD.md)
 
 ### Homework
 - Check out the following slide decks in Itslearning:
