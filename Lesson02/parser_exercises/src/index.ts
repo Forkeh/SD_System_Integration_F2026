@@ -1,6 +1,7 @@
 import express from 'express';
 import { CsvParser } from './csv-parser';
 import { TxtParser } from './text-parser';
+import { XmlParser } from './xml-parser';
 
 const app = express();
 const PORT = 3000;
@@ -79,6 +80,17 @@ app.get('/api/github/:username/:repo/:branch/raw/:path(*)', async (req, res) => 
 		res.send(result);
 	} catch (error) {
 		res.status(500).json({ error: 'Failed to get file contents' });
+	}
+});
+
+// XML Parser
+app.get('/api/companies/xml', async (req, res) => {
+	try {
+		const xmlParser = new XmlParser('../danish_companies.xml');
+		const companies = await xmlParser.xmlToJson();
+		res.json(companies);
+	} catch (error) {
+		res.status(500).json({ error: 'Failed to parse XML file' });
 	}
 });
 
