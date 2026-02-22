@@ -2,6 +2,8 @@
 
 # Lesson 4 - 26 February
 
+[Rescheduling: Propose 16 Mar]: #
+
 [Download Message Queues.pptx, XML.pptx, TCP/IP.pptx, Message Queues.pptx]: #
 
 [Solutions: CV XSD, Employees XSLT, XML File Parsing, netstat (ask), TCP vs UDP]: #
