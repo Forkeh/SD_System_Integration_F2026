@@ -28,4 +28,6 @@ API output:
 ]
 ```
 
-Use [this fake Danish companies CSV file](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/danish_companies.csv) for testing.
+Use [this fake Danish companies CSV file](https://github.com/arturomorarioja-ek/SD_System_Integration_F26_Materials/blob/main/File%20Formats/Exercises/danish_companies.csv) for testing.
+
+**Proposed solutions**: [Python](https://github.com/arturomorarioja/py_csv_parser_api/tree/main) | [NodeJS](https://github.com/arturomorarioja/js_csv_parser_api)
