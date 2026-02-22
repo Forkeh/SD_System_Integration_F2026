@@ -4,7 +4,13 @@
 
     <xs:complexType name="employeeType">
         <xs:sequence>
-            <xs:element name="code" type="xs:string"/>
+            <xs:element name="code">
+                <xs:simpleType>
+                    <xs:restriction base="xs:string">
+                        <xs:pattern value="[A-Z][0-9]{3}"/>
+                    </xs:restriction>
+                </xs:simpleType>
+            </xs:element>
             <xs:element name="name" type="xs:string"/>
             <xs:element name="town" type="xs:string"/>
             <xs:element name="degree" minOccurs="0" maxOccurs="unbounded">
