@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CV xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="EX 02 CV.xsd">
+
+	<PersonalInformation>
+		<firstName>Frederik</firstName>
+		<lastName>Nørgaard</lastName>
+		<dateOfBirth>1995-03-14</dateOfBirth>
+		<placeOfBirth>Copenhagen</placeOfBirth>
+		<nationalities>
+			<nationality>Danish</nationality>
+			<nationality>Swedish</nationality>
+		</nationalities>
+		<CPR>140395-1234</CPR>
+		<pictureFileName>frederik.jpg</pictureFileName>
+	</PersonalInformation>
+
+	<ContactInformation>
+		<street>Nørrebrogade</street>
+		<number>42</number>
+        <furtherInformation>to the left</furtherInformation>
+		<postalCode>2200</postalCode>
+		<email>frederik@example.com</email>
+		<phoneNumber>12345678</phoneNumber>
+		<linkedIn>https://linkedin.com/in/frederik-norgaard</linkedIn>
+	</ContactInformation>
+
+	<academicBackground>
+		<degree>
+			<name>BSc in Computer Science</name>
+			<institution>IT University of Copenhagen</institution>
+			<graduationYear>2018</graduationYear>
+		</degree>
+		<degree>
+			<name>MSc in Software Engineering</name>
+			<institution>Technical University of Denmark</institution>
+			<graduationYear>2021</graduationYear>
+		</degree>
+	</academicBackground>
+
+	<languages>
+		<language>
+			<name>Danish</name>
+			<motherTongue>true</motherTongue>
+		</language>
+		<language>
+			<name>English</name>
+			<motherTongue>false</motherTongue>
+			<level>high</level>
+		</language>
+		<language>
+			<name>German</name>
+			<motherTongue>false</motherTongue>
+			<level>intermediate</level>
+		</language>
+	</languages>
+
+	<workHistory>
+		<positions>
+			<companyName>Novo Nordisk</companyName>
+			<title>Software Developer</title>
+			<startingDate>2021-08-01</startingDate>
+			<endDate>2024-01-31</endDate>
+		</positions>
+		<positions>
+			<companyName>Netcompany</companyName>
+			<title>Junior Developer</title>
+			<startingDate>2018-09-01</startingDate>
+			<endDate>2021-07-31</endDate>
+		</positions>
+	</workHistory>
+
+	<hobbies>
+		<hobby>Cycling</hobby>
+		<hobby>Photography</hobby>
+		<hobby>Open source contributing</hobby>
+	</hobbies>
+
+</CV>
