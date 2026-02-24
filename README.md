@@ -8,8 +8,8 @@
 - [Lesson 2](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson02/README.md) (5 February): SOA. Web Services. File Formats
 - [Lesson 3](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/README.md) (19 February): XML. Computer Networking
 - [Lesson 4](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson04/README.md) (26 February): HTTP. Message Queues. REST
-- [Lesson 5](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson05/README.md) (TBD): SOAP
-- [Lesson 6](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson06/README.md) (5 March): GraphQL
+- [Lesson 5](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson05/README.md) (5 March): SOAP
+- [Lesson 6](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson06/README.md) (TBD): GraphQL
 - [Lesson 7](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson07/README.md) (12 March): gRPC
 - [Lesson 8](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson08/README.md) (19 March): API Security
 - [Lesson 9](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/README.md) (26 March): API Documentation. OpenAPI
