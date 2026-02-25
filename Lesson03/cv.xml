@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CV xmlns="http://example.com/dk/cv">
+  <PersonalInformation>
+    <FirstName>Kari</FirstName>
+    <LastName>Eksempel</LastName>
+    <DateOfBirth>1990-05-12</DateOfBirth>
+    <PlaceOfBirth>Fiktivby, Danmark</PlaceOfBirth>
+    <Nationality>Danish</Nationality>
+    <Nationality>Norwegian</Nationality>
+    <CPR>120590-0000</CPR>
+    <PictureFileName>kari_eksempel.png</PictureFileName>
+  </PersonalInformation>
+
+  <ContactInformation>
+    <Street>Eksempelvej</Street>
+    <Number>42A</Number>
+    <FurtherInformation>1. th.</FurtherInformation>
+    <PostalCode>1234</PostalCode>
+    <EmailAddress>kari.eksempel@example.com</EmailAddress>
+    <PhoneNumber>+45 00 00 00 00</PhoneNumber>
+    <LinkedIn>https://www.linkedin.com/in/example-profile-not-real</LinkedIn>
+  </ContactInformation>
+
+  <AcademicBackground>
+    <Degree>
+      <Name>BSc in Information Technology</Name>
+      <Institution>Fiktivt Universitet</Institution>
+      <YearOfGraduation>2012</YearOfGraduation>
+    </Degree>
+    <Degree>
+      <Name>MSc in Software Engineering</Name>
+      <Institution>Nordic Institute of Technology</Institution>
+      <YearOfGraduation>2014</YearOfGraduation>
+    </Degree>
+  </AcademicBackground>
+
+  <Languages>
+    <Language>
+      <Name>Danish</Name>
+      <MotherTongue>true</MotherTongue>
+      <!-- Level omitted because this is mother tongue -->
+    </Language>
+    <Language>
+      <Name>English</Name>
+      <MotherTongue>false</MotherTongue>
+      <Level>high</Level>
+    </Language>
+    <Language>
+      <Name>German</Name>
+      <MotherTongue>false</MotherTongue>
+      <Level>low</Level>
+    </Language>
+  </Languages>
+
+  <WorkHistory>
+    <Position>
+      <CompanyName>Fiktiv Software A/S</CompanyName>
+      <JobTitle>Junior Developer</JobTitle>
+      <StartDate>2014-09-01</StartDate>
+      <EndDate>2017-08-31</EndDate>
+    </Position>
+    <Position>
+      <CompanyName>Nordic Code Lab ApS</CompanyName>
+      <JobTitle>Software Engineer</JobTitle>
+      <StartDate>2017-09-01</StartDate>
+      <EndDate>2021-12-31</EndDate>
+    </Position>
+    <Position>
+      <CompanyName>ScandiCloud Solutions A/S</CompanyName>
+      <JobTitle>Senior Software Engineer</JobTitle>
+      <StartDate>2022-01-01</StartDate>
+      <!-- EndDate omitted: current position -->
+    </Position>
+  </WorkHistory>
+
+  <Hobbies>
+    Board games, home recording, coastal hiking.
+  </Hobbies>
+</CV>
