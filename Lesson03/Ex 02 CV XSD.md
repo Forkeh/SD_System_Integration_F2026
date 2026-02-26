@@ -10,3 +10,6 @@ Build an XML schema that validates a CV for a Danish resident with the following
 - Hobbies (optional)
 
 Create a sample XML file based on the XSD file.
+
+### Solution
+[XSD](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/cv.xsd) / [XML](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/cv.xml)
