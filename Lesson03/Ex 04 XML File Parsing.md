@@ -58,4 +58,7 @@ API output:
 }
 ```
 
-Use [this fake Danish companies XML file](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/danish_companies.xml) for testing.
+Use [this fake Danish companies XML file](https://github.com/arturomorarioja-ek/SD_System_Integration_F26_Materials/blob/main/File%20Formats/Exercises/danish_companies.xml) for testing.
+
+### Solution
+[Python](https://github.com/arturomorarioja/py_xml_parser_api)

@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema
+  xmlns:xs="http://www.w3.org/2001/XMLSchema"
+  targetNamespace="http://example.com/dk/cv"
+  xmlns="http://example.com/dk/cv"
+  elementFormDefault="qualified">
+
+  <!-- Simple types -->
+
+  <xs:simpleType name="CPRType">
+    <xs:restriction base="xs:string">
+      <!-- ddmmyy-xxxx (very simplified, not validating real dates) -->
+      <xs:pattern value="\d{6}-\d{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PostalCodeType">
+    <xs:restriction base="xs:string">
+      <!-- Danish postal codes have 4 digits -->
+      <xs:pattern value="\d{4}"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PictureFilenameType">
+    <xs:restriction base="xs:string">
+      <!-- Very simple: any name ending in .jpg / .jpeg / .png -->
+      <xs:pattern value=".+\.(jpg|jpeg|png)"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="EmailType">
+    <xs:restriction base="xs:string">
+      <!-- Simple email pattern (not fully RFC-compliant) -->
+      <xs:pattern value="[^@\s]+@[^@\s]+\.[^@\s]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="PhoneType">
+    <xs:restriction base="xs:string">
+      <!-- Allow optional + and digits, spaces allowed -->
+      <xs:pattern value="\+?[0-9 ]+"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LinkedInURLType">
+    <xs:restriction base="xs:string">
+      <xs:pattern value="https://www\.linkedin\.com/.*"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <xs:simpleType name="LanguageLevelType">
+    <xs:restriction base="xs:string">
+      <xs:enumeration value="high"/>
+      <xs:enumeration value="intermediate"/>
+      <xs:enumeration value="low"/>
+    </xs:restriction>
+  </xs:simpleType>
+
+  <!-- Root element -->
+
+  <xs:element name="CV">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="PersonalInformation" type="PersonalInformationType"/>
+        <xs:element name="ContactInformation" type="ContactInformationType"/>
+        <xs:element name="AcademicBackground" type="AcademicBackgroundType"/>
+        <xs:element name="Languages" type="LanguagesType"/>
+        <xs:element name="WorkHistory" type="WorkHistoryType"/>
+        <xs:element name="Hobbies" type="xs:string" minOccurs="0"/>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- Complex types -->
+
+  <xs:complexType name="PersonalInformationType">
+    <xs:sequence>
+      <xs:element name="FirstName" type="xs:string"/>
+      <xs:element name="LastName" type="xs:string"/>
+      <xs:element name="DateOfBirth" type="xs:date"/>
+      <xs:element name="PlaceOfBirth" type="xs:string"/>
+      <!-- Multiple nationalities allowed -->
+      <xs:element name="Nationality" type="xs:string" minOccurs="1" maxOccurs="unbounded"/>
+      <xs:element name="CPR" type="CPRType"/>
+      <xs:element name="PictureFileName" type="PictureFilenameType"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="ContactInformationType">
+    <xs:sequence>
+      <xs:element name="Street" type="xs:string"/>
+      <xs:element name="Number" type="xs:string"/>
+      <xs:element name="FurtherInformation" type="xs:string" minOccurs="0"/>
+      <xs:element name="PostalCode" type="PostalCodeType"/>
+      <xs:element name="EmailAddress" type="EmailType"/>
+      <xs:element name="PhoneNumber" type="PhoneType"/>
+      <!-- Optional contact information -->
+      <xs:element name="LinkedIn" type="LinkedInURLType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="AcademicBackgroundType">
+    <xs:sequence>
+      <!-- At least one tertiary degree -->
+      <xs:element name="Degree" type="DegreeType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="DegreeType">
+    <xs:sequence>
+      <!-- Name of the degree, e.g. "MSc in Computer Science" -->
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="Institution" type="xs:string"/>
+      <!-- Year of graduation -->
+      <xs:element name="YearOfGraduation" type="xs:gYear"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LanguagesType">
+    <xs:sequence>
+      <xs:element name="Language" type="LanguageType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="LanguageType">
+    <xs:annotation>
+      <xs:documentation>
+        If MotherTongue is true, Level SHOULD be omitted.
+        If MotherTongue is false, Level SHOULD be provided.
+        (This rule is not enforced in XSD 1.0.)
+      </xs:documentation>
+    </xs:annotation>
+    <xs:sequence>
+      <xs:element name="Name" type="xs:string"/>
+      <xs:element name="MotherTongue" type="xs:boolean"/>
+      <xs:element name="Level" type="LanguageLevelType" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="WorkHistoryType">
+    <xs:sequence>
+      <xs:element name="Position" type="PositionType" minOccurs="1" maxOccurs="unbounded"/>
+    </xs:sequence>
+  </xs:complexType>
+
+  <xs:complexType name="PositionType">
+    <xs:sequence>
+      <xs:element name="CompanyName" type="xs:string"/>
+      <xs:element name="JobTitle" type="xs:string"/>
+      <xs:element name="StartDate" type="xs:date"/>
+      <!-- EndDate optional to allow current positions -->
+      <xs:element name="EndDate" type="xs:date" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+
+</xs:schema>
