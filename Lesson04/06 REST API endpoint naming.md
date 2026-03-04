@@ -1,5 +1,5 @@
 ### REST Endpoint Naming
-Imagine that you have a database with CVs whose design is based on the [CV XSD exercise](https://github.com/arturomorarioja-ek/SD_System_Integration_F26_Materials/blob/main/File%20Formats/Exercises/06%20CV%20XSD.md). You have to design a REST API based on this data.
+Imagine that you have a database with CVs whose design is based on the [CV XSD exercise](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson03/Ex%2002%20CV%20XSD.md). You have to design a REST API based on this data.
 
 Write down the names of the following REST endpoints:
 - List CVs. Either the full list or filtered by:
