@@ -5,4 +5,6 @@
 [Download Message Queues.pptx, XML.pptx, TCP/IP.pptx, Message Queues.pptx]: #
 [Rescheduling: Propose 16 Mar]: #
 
+[Exercise solutions: HTTP response inspection app, HTTP server, REST endpoint naming, To Do list, To Do list v2]: #
+
 [SOAP slides]: #
