@@ -17,14 +17,14 @@ Write down the names of the following REST endpoints:
 
 - Delete a CV `DELETE /cvs/{id}`
 
-- Get personal information for a CV `GET /cvs/{id}/personal-information`
+- Get personal information for a CV `GET /cvs/{id}/personal-informations`
 
-- Replace personal information for a CV `PUT /cvs/{id}/personal-information`
+- Replace personal information for a CV `PUT /cvs/{id}/personal-informations`
 
-- Partially update personal information for a CV `PATCH /cvs/{id}/personal-information`
+- Partially update personal information for a CV `PATCH /cvs/{id}/personal-informations`
 
-- Retrieve the picture file name for a CV `GET /cvs/{id}/personal-information/picture-file-name`
-- Update the picture file name for a CV `PUT /cvs/{id}/personal-information/picture-file-name`
+- Retrieve the picture file name for a CV `GET /cvs/{id}/personal-informations/pictures`
+- Update the picture file name for a CV `PUT /cvs/{id}/personal-informations/pictures`
 
 - Get all degrees for a CV `GET /cvs/{id}/degrees`
 - Add a new degree to a CV `POST /cvs/{id}/degrees`
@@ -32,5 +32,12 @@ Write down the names of the following REST endpoints:
 - Replace a degree in a CV `PUT /cvs/{cvId}/degrees/{degreeId}`
 - Delete a degree in a CV `DELETE /cvs/{cvId}/degrees/{degreeId}`
 
-- Logging in `POST /session`
-- Logging out `DELETE /session/{id}`
+If authentication is based on session:
+
+- Logging in `POST /auth/sessions`. This endpoint returns a session token
+- Logging out `DELETE /auth/sessions/{id}`. The server deletes a specific session
+
+If authentication is based on tokens:
+
+- Logging in `POST /auth/tokens`. This endpoint returns a token
+- Logging out `DELETE /auth/tokens/{id}`. The server deletes a specific token
