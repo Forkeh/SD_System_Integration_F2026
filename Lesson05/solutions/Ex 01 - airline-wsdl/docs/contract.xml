@@ -1,0 +1,162 @@
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://tempuri.org/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.microsoft.com/ws/06/2004/policy/http" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" targetNamespace="http://tempuri.org/" name="IAirlineService" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+    <wsdl:types>
+        <xs:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+            <xs:import namespace="http://schemas.datacontract.org/2004/07/AirlineWsdl.Messages" />
+            <xs:import namespace="http://schemas.datacontract.org/2004/07/AirlineWsdl.Models" />
+            <xs:element name="SearchFlights">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="1" name="request" nillable="true" xmlns:q1="http://schemas.datacontract.org/2004/07/AirlineWsdl.Messages" type="q1:SearchFlightsRequest" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="SearchFlightsResponse">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element minOccurs="1" name="SearchFlightsResult" nillable="true" xmlns:q2="http://schemas.datacontract.org/2004/07/AirlineWsdl.Messages" type="q2:SearchFlightsResponse" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+        </xs:schema>
+        <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/">
+            <xs:element name="anyType" nillable="true" type="xs:anyType" />
+            <xs:element name="anyURI" nillable="true" type="xs:anyURI" />
+            <xs:element name="base64Binary" nillable="true" type="xs:base64Binary" />
+            <xs:element name="boolean" nillable="true" type="xs:boolean" />
+            <xs:element name="byte" nillable="true" type="xs:byte" />
+            <xs:element name="dateTime" nillable="true" type="xs:dateTime" />
+            <xs:element name="decimal" nillable="true" type="xs:decimal" />
+            <xs:element name="double" nillable="true" type="xs:double" />
+            <xs:element name="float" nillable="true" type="xs:float" />
+            <xs:element name="int" nillable="true" type="xs:int" />
+            <xs:element name="long" nillable="true" type="xs:long" />
+            <xs:element name="QName" nillable="true" type="xs:QName" />
+            <xs:element name="short" nillable="true" type="xs:short" />
+            <xs:element name="string" nillable="true" type="xs:string" />
+            <xs:element name="unsignedByte" nillable="true" type="xs:unsignedByte" />
+            <xs:element name="unsignedInt" nillable="true" type="xs:unsignedInt" />
+            <xs:element name="unsignedLong" nillable="true" type="xs:unsignedLong" />
+            <xs:element name="unsignedShort" nillable="true" type="xs:unsignedShort" />
+            <xs:element name="char" nillable="true" type="tns:char" />
+            <xs:simpleType name="char">
+                <xs:restriction base="xs:int" />
+            </xs:simpleType>
+            <xs:element name="duration" nillable="true" type="tns:duration" />
+            <xs:simpleType name="duration">
+                <xs:restriction base="xs:duration">
+                    <xs:pattern value="\-?P(\d*D)?(T(\d*H)?(\d*M)?(\d*(\.\d*)?S)?)?" />
+                    <xs:minInclusive value="-P10675199DT2H48M5.4775808S" />
+                    <xs:maxInclusive value="P10675199DT2H48M5.4775807S" />
+                </xs:restriction>
+            </xs:simpleType>
+            <xs:element name="guid" nillable="true" type="tns:guid" />
+            <xs:simpleType name="guid">
+                <xs:restriction base="xs:string">
+                    <xs:pattern value="[\da-fA-F]{8}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{4}-[\da-fA-F]{12}" />
+                </xs:restriction>
+            </xs:simpleType>
+            <xs:attribute name="FactoryType" type="xs:QName" />
+            <xs:attribute name="Id" type="xs:ID" />
+            <xs:attribute name="Ref" type="xs:IDREF" />
+        </xs:schema>
+        <xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AirlineWsdl.Messages" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/AirlineWsdl.Messages" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+            <xs:import namespace="http://schemas.datacontract.org/2004/07/System" />
+            <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            <xs:complexType name="SearchFlightsRequest" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+                <xs:sequence>
+                    <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/AirlineWsdl.Models" type="q1:CabinClass" name="Cabin" />
+                    <xs:element minOccurs="0" name="DepartureDate" type="xs:dateTime" />
+                    <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+                    <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+                    <xs:element minOccurs="0" name="Passengers" nillable="true" xmlns:q2="http://schemas.datacontract.org/2004/07/AirlineWsdl.Models" type="q2:PassengerCount" />
+                    <xs:element minOccurs="0" name="ReturnDate" type="xs:dateTime" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="SearchFlightsRequest" nillable="true" type="tns:SearchFlightsRequest" />
+            <xs:complexType name="SearchFlightsResponse" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Flights" nillable="true" xmlns:q3="http://schemas.datacontract.org/2004/07/AirlineWsdl.Models" type="q3:ArrayOfFlight" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="SearchFlightsResponse" nillable="true" type="tns:SearchFlightsResponse" />
+        </xs:schema>
+        <xs:schema elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/AirlineWsdl.Models" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.datacontract.org/2004/07/AirlineWsdl.Models" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+            <xs:import namespace="http://schemas.datacontract.org/2004/07/System" />
+            <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+            <xs:complexType name="PassengerCount" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Adults" type="xs:int" />
+                    <xs:element minOccurs="0" name="Children" type="xs:int" />
+                    <xs:element minOccurs="0" name="Infants" type="xs:int" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="PassengerCount" nillable="true" type="tns:PassengerCount" />
+            <xs:simpleType name="CabinClass">
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="ECONOMY" />
+                    <xs:enumeration value="PREMIUM_ECONOMY" />
+                    <xs:enumeration value="BUSINESS" />
+                    <xs:enumeration value="FIRST" />
+                </xs:restriction>
+            </xs:simpleType>
+            <xs:element name="CabinClass" type="tns:CabinClass" />
+            <xs:complexType name="ArrayOfFlight" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+                <xs:sequence>
+                    <xs:element minOccurs="0" maxOccurs="unbounded" name="Flight" nillable="true" type="tns:Flight" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="ArrayOfFlight" nillable="true" type="tns:ArrayOfFlight" />
+            <xs:complexType name="Flight" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="ArriveDateTime" type="xs:dateTime" />
+                    <xs:element minOccurs="0" name="Carrier" nillable="true" type="xs:string" />
+                    <xs:element minOccurs="0" name="DepartDateTime" type="xs:dateTime" />
+                    <xs:element minOccurs="0" name="Destination" nillable="true" type="xs:string" />
+                    <xs:element minOccurs="0" name="FlightNumber" nillable="true" type="xs:string" />
+                    <xs:element minOccurs="0" name="Origin" nillable="true" type="xs:string" />
+                    <xs:element minOccurs="0" name="Price" nillable="true" type="tns:Money" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="Flight" nillable="true" type="tns:Flight" />
+            <xs:complexType name="Money" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="Amount" type="xs:decimal" />
+                    <xs:element minOccurs="0" name="Currency" nillable="true" type="xs:string" />
+                </xs:sequence>
+            </xs:complexType>
+            <xs:element name="Money" nillable="true" type="tns:Money" />
+        </xs:schema>
+        <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="http://schemas.microsoft.com/2003/10/Serialization/Arrays" xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" elementFormDefault="qualified" targetNamespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <xs:import namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+        </xs:schema>
+    </wsdl:types>
+    <wsdl:message name="IAirlineService_SearchFlights_InputMessage">
+        <wsdl:part name="parameters" element="tns:SearchFlights" />
+    </wsdl:message>
+    <wsdl:message name="IAirlineService_SearchFlights_OutputMessage">
+        <wsdl:part name="parameters" element="tns:SearchFlightsResponse" />
+    </wsdl:message>
+    <wsdl:portType name="IAirlineService">
+        <wsdl:operation name="SearchFlights">
+            <wsdl:input wsam:Action="http://tempuri.org/IAirlineService/SearchFlights" message="tns:IAirlineService_SearchFlights_InputMessage" />
+            <wsdl:output wsam:Action="http://tempuri.org/IAirlineService/SearchFlightsResponse" message="tns:IAirlineService_SearchFlights_OutputMessage" />
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="BasicHttpBinding_IAirlineService" type="tns:IAirlineService">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+        <wsdl:operation name="SearchFlights">
+            <soap:operation soapAction="http://tempuri.org/IAirlineService/SearchFlights" style="document" />
+            <wsdl:input>
+                <soap:body use="literal" />
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal" />
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="IAirlineService">
+        <wsdl:port name="BasicHttpBinding_IAirlineService" binding="tns:BasicHttpBinding_IAirlineService">
+            <soap:address location="http://localhost:5065/AirlineService.asmx" />
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

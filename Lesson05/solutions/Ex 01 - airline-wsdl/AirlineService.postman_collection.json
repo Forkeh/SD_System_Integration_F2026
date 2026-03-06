@@ -1,0 +1,108 @@
+{
+    "info": {
+        "name": "Airline WSDL Service",
+        "description": "Postman collection to test the Airline SOAP/WSDL service built with .NET and SoapCore.",
+        "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "variable": [
+        {
+            "key": "baseUrl",
+            "value": "http://localhost:5065"
+        }
+    ],
+    "item": [
+        {
+            "name": "Get WSDL",
+            "request": {
+                "method": "GET",
+                "header": [],
+                "url": {
+                    "raw": "{{baseUrl}}/AirlineService.asmx?wsdl",
+                    "host": ["{{baseUrl}}"],
+                    "path": ["AirlineService.asmx"],
+                    "query": [
+                        {
+                            "key": "wsdl",
+                            "value": ""
+                        }
+                    ]
+                }
+            }
+        },
+        {
+            "name": "SearchFlights - Economy",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "text/xml; charset=utf-8"
+                    },
+                    {
+                        "key": "SOAPAction",
+                        "value": "\"http://tempuri.org/IAirlineService/SearchFlights\""
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\n               xmlns:tns=\"http://tempuri.org/\"\n               xmlns:msg=\"http://schemas.datacontract.org/2004/07/AirlineWsdl.Messages\"\n               xmlns:mdl=\"http://schemas.datacontract.org/2004/07/AirlineWsdl.Models\">\n  <soap:Body>\n    <tns:SearchFlights>\n      <tns:request>\n        <msg:Cabin>ECONOMY</msg:Cabin>\n        <msg:DepartureDate>2026-06-15T00:00:00</msg:DepartureDate>\n        <msg:Destination>MAD</msg:Destination>\n        <msg:Origin>CPH</msg:Origin>\n        <msg:Passengers>\n          <mdl:Adults>2</mdl:Adults>\n          <mdl:Children>1</mdl:Children>\n          <mdl:Infants>0</mdl:Infants>\n        </msg:Passengers>\n        <msg:ReturnDate>2026-06-22T00:00:00</msg:ReturnDate>\n      </tns:request>\n    </tns:SearchFlights>\n  </soap:Body>\n</soap:Envelope>"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/AirlineService.asmx",
+                    "host": ["{{baseUrl}}"],
+                    "path": ["AirlineService.asmx"]
+                }
+            }
+        },
+        {
+            "name": "SearchFlights - Business",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "text/xml; charset=utf-8"
+                    },
+                    {
+                        "key": "SOAPAction",
+                        "value": "\"http://tempuri.org/IAirlineService/SearchFlights\""
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\n               xmlns:tns=\"http://tempuri.org/\"\n               xmlns:msg=\"http://schemas.datacontract.org/2004/07/AirlineWsdl.Messages\"\n               xmlns:mdl=\"http://schemas.datacontract.org/2004/07/AirlineWsdl.Models\">\n  <soap:Body>\n    <tns:SearchFlights>\n      <tns:request>\n        <msg:Cabin>BUSINESS</msg:Cabin>\n        <msg:DepartureDate>2026-07-01T00:00:00</msg:DepartureDate>\n        <msg:Destination>LHR</msg:Destination>\n        <msg:Origin>CPH</msg:Origin>\n        <msg:Passengers>\n          <mdl:Adults>1</mdl:Adults>\n          <mdl:Children>0</mdl:Children>\n          <mdl:Infants>0</mdl:Infants>\n        </msg:Passengers>\n        <msg:ReturnDate>2026-07-05T00:00:00</msg:ReturnDate>\n      </tns:request>\n    </tns:SearchFlights>\n  </soap:Body>\n</soap:Envelope>"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/AirlineService.asmx",
+                    "host": ["{{baseUrl}}"],
+                    "path": ["AirlineService.asmx"]
+                }
+            }
+        },
+        {
+            "name": "SearchFlights - First Class",
+            "request": {
+                "method": "POST",
+                "header": [
+                    {
+                        "key": "Content-Type",
+                        "value": "text/xml; charset=utf-8"
+                    },
+                    {
+                        "key": "SOAPAction",
+                        "value": "\"http://tempuri.org/IAirlineService/SearchFlights\""
+                    }
+                ],
+                "body": {
+                    "mode": "raw",
+                    "raw": "<?xml version=\"1.0\" encoding=\"utf-8\"?>\n<soap:Envelope xmlns:soap=\"http://schemas.xmlsoap.org/soap/envelope/\"\n               xmlns:tns=\"http://tempuri.org/\"\n               xmlns:msg=\"http://schemas.datacontract.org/2004/07/AirlineWsdl.Messages\"\n               xmlns:mdl=\"http://schemas.datacontract.org/2004/07/AirlineWsdl.Models\">\n  <soap:Body>\n    <tns:SearchFlights>\n      <tns:request>\n        <msg:Cabin>FIRST</msg:Cabin>\n        <msg:DepartureDate>2026-08-10T00:00:00</msg:DepartureDate>\n        <msg:Destination>JFK</msg:Destination>\n        <msg:Origin>CPH</msg:Origin>\n        <msg:Passengers>\n          <mdl:Adults>2</mdl:Adults>\n          <mdl:Children>2</mdl:Children>\n          <mdl:Infants>1</mdl:Infants>\n        </msg:Passengers>\n        <msg:ReturnDate>2026-08-20T00:00:00</msg:ReturnDate>\n      </tns:request>\n    </tns:SearchFlights>\n  </soap:Body>\n</soap:Envelope>"
+                },
+                "url": {
+                    "raw": "{{baseUrl}}/AirlineService.asmx",
+                    "host": ["{{baseUrl}}"],
+                    "path": ["AirlineService.asmx"]
+                }
+            }
+        }
+    ]
+}
