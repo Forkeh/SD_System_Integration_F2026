@@ -10,7 +10,7 @@
 - [Lesson 4](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson04/README.md) (26 February): HTTP. Message Queues. REST
 - [Lesson 5](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson05/README.md) (6 March): SOAP
 - [Lesson 6](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson06/README.md) (12 March): GraphQL
-- [Lesson 7](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson07/README.md) (TBD): gRPC
+- [Lesson 7](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson07/README.md) (16 March): gRPC
 - [Lesson 8](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson08/README.md) (19 March): API Security
 - [Lesson 9](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/README.md) (26 March): API Documentation. OpenAPI
 - Lesson 10 (9 April): Student presentations
