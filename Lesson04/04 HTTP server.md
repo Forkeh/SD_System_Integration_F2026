@@ -8,3 +8,6 @@ Implement the following endpoints:
 - `GET /`. It returns HTML with information about the endpoints
 - `GET /health`. It returns JSON with information about the service (e.g., name, status, current datetime)
 - `POST /echo`. It receives raw JSON and returns it
+
+### Solution
+[Python](https://github.com/arturomorarioja/py_http_server)
