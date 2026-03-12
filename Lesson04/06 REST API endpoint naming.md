@@ -46,8 +46,8 @@ Write down the names of the following REST endpoints:
 - Replace personal information for a CV: `PUT /cvs/{cvId}/personal-information`
 - Partially update personal information for a CV: `PATCH /cvs/{cvId}/personal-information`
 
-- Retrieve the picture file name for a CV: `GET /cvs/{cvId}/personal-information/picture`
-- Update the picture file name for a CV: `PUT /cvs/{cvId}/personal-information/picture`
+- Retrieve the picture file name for a CV: `GET /cvs/{cvId}/picture`
+- Update the picture file name for a CV: `PUT /cvs/{cvId}/picture`
 
 - Get all degrees for a CV: `GET /cvs/{cvId}/degrees`
 - Add a new degree to a CV: `POST /cvs/{cvId}/degrees`

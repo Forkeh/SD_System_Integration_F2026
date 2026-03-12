@@ -2,12 +2,6 @@
 
 # Lesson 5 - 6 March
 
-[Rescheduling: 16 Mar]: #
-[ask kvalitet whether classes can be streamed and recorded]: #
-[rework rest api endpoint naming]: #
-
-[SOAP slides]: #
-
 ### In-class exercise
 - [Airline system WSDL generation](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson05/01%20Airline%20system%20WSDL.md)
 
@@ -20,3 +14,6 @@
 - Check out the following demos:
   - Sample WSDL file: [Stock Quotes](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson05/stock_quotes.wsdl)
   - WSDL generation. SOAP server and client: [Bank account opening](https://github.com/arturomorarioja/php_soap_bank_account_opening)
+- Do the following exercises:
+  - [Create SOAP server and client for the Airline system](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson05/02%20Airline%20system%20server-client.md)
+  - [Add ticket purchasing to the Airline system](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson05/03%20Airline%20system%20purchase.md)
