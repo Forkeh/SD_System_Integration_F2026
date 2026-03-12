@@ -10,3 +10,12 @@
 [Show solution to Airline & Airline v2, including Postman collection]: #
 
 [GraphQL slides]: #
+
+      - [Moonhighway's Trail Events playground](https://snowtooth.moonhighway.com/)
+      - [Moonhighway's Pet Library playground](https://pet-library.moonhighway.com/) 
+      - [Hasura's Photo Albums playground](https://cloud.hasura.io/public/graphiql?endpoint=https%3A%2F%2Fgraphqlzero.almansi.me%2Fapi)
+      - [Star Wars playground](https://graphql.org/swapi-graphql/)
+      - [Users playground](https://graphqlplaceholder.vercel.app/graphql)
+      - [Photo Albums playground](https://graphqlzero.almansi.me/api)
+      - [Company playground](https://www.devtoolsdaily.com/graphql/playground/)
+      - [Hypgraph's Movies playground](https://hygraph.com/graphql-playground)
