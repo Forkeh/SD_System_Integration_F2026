@@ -23,3 +23,5 @@
 ### Homework
 
 - Check out the **GraphQL** slides
+- Check out the following code samples:
+  - [Star Wars: GraphQL API consumption](https://github.com/arturomorarioja/js_graphql_star_wars)
