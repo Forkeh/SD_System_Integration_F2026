@@ -16,11 +16,12 @@
   - [Photo Albums playground](https://graphqlzero.almansi.me/api)
   - [Company playground](https://www.devtoolsdaily.com/graphql/playground/)
   - [Hypgraph's Movies playground](https://hygraph.com/graphql-playground)
+- GraphQL SDL: [Movie Streaming](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson06/02%20Movie%20Streaming.md)
 
 ### Homework
 
 - Check out the **GraphQL** slides
 - Check out the following code samples:
-  - [Star Wars: GraphQL API consumption](https://github.com/arturomorarioja/js_graphql_star_wars)
+  - GraphQL API consumption: [Star Wars](https://github.com/arturomorarioja/js_graphql_star_wars)
 - Solve the following exercises:
-  - [Countries: GraphQL practice](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson06/01%20Countries.md)
+  - [GraphQL practice: Countries](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson06/01%20Countries.md)
