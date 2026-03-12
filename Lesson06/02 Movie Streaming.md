@@ -21,6 +21,69 @@ Queries
 Mutations
 - Add movie (parameters: title, genre, duration in minutes)
 
+### Solution
+
+```graphql
+schema {
+    query: Query
+    mutation: Mutation
+}
+
+type Query {
+    movie(id: ID!): Movie
+    movies(genre: Genre, minRating: Float): [Movie!]!
+    users: [User!]!
+}
+
+type Mutation {
+    addMovie(
+        title: String!
+        genre: Genre!
+        durationMinutes: Int!
+    ): Movie!
+}
+
+enum Genre {
+    ACTION
+    COMEDY
+    DRAMA
+    HORROR
+    SCIFI
+    OTHER
+}
+
+type Movie {
+    id: ID!
+    title: String!
+    genre: Genre!
+    durationMinutes: Int!
+    rating: Float
+    isAvailable: Boolean!
+    details: MovieDetails!
+    cast: [Person!]!
+}
+
+type MovieDetails {
+    releaseYear: Int!
+    language: String!
+    ageRating: String!   # e.g. "PG-13"
+}
+
+type Person {
+    id: ID!
+    name: String!
+    role: String!
+}
+
+type User {
+    id: ID!
+    username: String!
+    email: String!
+    hasSubscription: Boolean!
+    favoriteMovies: [Movie!]!
+}
+```
+
 **Part II**
 
 Write the following queries:
