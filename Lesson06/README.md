@@ -24,4 +24,4 @@
 - Check out the following code samples:
   - GraphQL API consumption: [Star Wars](https://github.com/arturomorarioja/js_graphql_star_wars)
 - Solve the following exercises:
-  - [GraphQL practice: Countries](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson06/01%20Countries.md)
+  - GraphQL practice: [Countries](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson06/01%20Countries.md)
