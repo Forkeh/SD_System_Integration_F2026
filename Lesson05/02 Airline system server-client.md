@@ -5,3 +5,6 @@ The client will output:
 - For each flight, carrier, flight number, departure, arrival, and price
 - The XML request
 - The XML response
+
+### Solution
+[PHP](https://github.com/arturomorarioja/php_soap_airline_system)
