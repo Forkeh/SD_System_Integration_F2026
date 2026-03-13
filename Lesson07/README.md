@@ -3,3 +3,11 @@
 # Lesson 7 - 16 March
 
 [Homework solutions: Countries queries, Movie Streaming part II queries, ask about how they solved Books, Tasks]: #
+
+[Slides: gRPC]: #
+
+### Recommendation
+
+The best programming language to Work with gRPC is Go (Golang). If you want to give it a try:
+1. [Install Go](https://go.dev/dl/)
+2. Install gRPC: `go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest`
