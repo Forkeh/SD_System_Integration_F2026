@@ -4,6 +4,7 @@
 
 [Download gRPC slides]: #
 [git pull all code samples]: #
+[git pull 1MA code: https://github.com/arturomorarioja/py_grpc_library and https://github.com/arturomorarioja/php_soap_library]: #
 [Make sure that grpcurl is installed: https://github.com/fullstorydev/grpcurl]: #
 
 [Homework solutions: Countries queries, Movie Streaming part II queries, ask about how they solved Books, Tasks]: #
