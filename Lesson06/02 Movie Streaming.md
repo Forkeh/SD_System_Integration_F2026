@@ -84,16 +84,84 @@ type User {
 }
 ```
 
+
 **Part II**
 
 Write the following queries:
 
 1. Get the titles of all movies
 
+  ```graphql
+  query ListMovieTitles {
+    movies {
+      title
+    }
+  }
+  ```
+
 2. Get a movie by ID
+
+  ```graphql
+  query GetMovie {
+    movie(id: "m1") {
+      id
+      title
+      genre
+      durationMinutes
+      isAvailable
+      details {
+        releaseYear
+        language
+        ageRating
+      }
+      cast {
+        name
+        role
+      }
+    }
+  }
+  ```
 
 3. Get all action movies with an average rating of 4.0
 
+  ```graphql
+  query MoviesByGenreAndRating {
+    movies(genre: ACTION, minRating: 4.0) {
+      title
+      rating
+      genre
+    }
+  }
+  ```
+
 4. Get all users with their favourite movies
 
+  ```graphql
+  query GetUsers {
+    users {
+      id
+      username
+      hasSubscription
+      favoriteMovies {
+        title
+        genre
+      }
+    }
+  }
+  ```
+
 5. Write a mutation to add the film *Inception* (science-fiction, 148 minutes).
+
+```graphql
+mutation {
+  addMovie(
+    title: "Inception"
+    genre: SCIFI
+    durationMinutes: 148
+  ) {
+    id
+    title
+    genre
+  }
+}
+```
