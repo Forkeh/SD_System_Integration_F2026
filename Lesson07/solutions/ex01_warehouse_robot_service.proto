@@ -1,0 +1,63 @@
+syntax = "proto3";
+
+package warehouse_robo;
+
+// WarehouseRobotService provides operations for managing warehouse robots,
+// including task assignment, status monitoring, and task completion.
+// 
+// This service enables clients to:
+//  - Assign tasks to available robots
+//  - Retrieve the current status of a robot
+//  - Mark tasks as completed
+service WarehouseRobotService {
+  // AssignRobotTask assigns a new task to a specified robot.
+  // Returns the assignment confirmation and estimated completion time.
+  rpc AssignRobotTask(AssignRobotTaskRequest) returns (AssignRobotTaskResponse);
+
+  // GetRobotStatus retrieves the current operational status of a robot,
+  // including its location and active task.
+  rpc GetRobotStatus(GetRobotStatusRequest) returns (GetRobotStatusResponse);
+
+  // CompleteTask marks an assigned task as completed for the given robot.
+  rpc CompleteTask(CompleteTaskRequest) returns (CompleteTaskResponse);
+}
+
+message AssignRobotTaskRequest {
+  string robot_id = 1;
+  string task_id = 2;
+  string pickup_zone = 3;
+  string delivery_zone = 4;
+  string box_id = 5;
+}
+
+message AssignRobotTaskResponse {
+  string confirmation_message = 1;
+  string assigned_task_id = 2;
+}
+
+message GetRobotStatusRequest {
+  string robot_id = 1;
+}
+
+message GetRobotStatusResponse {
+  string robot_id = 1;
+  string current_zone = 2;
+  float battery_level = 3;
+  RobotStatus status = 4;
+}
+
+message CompleteTaskRequest {
+  string task_id = 1;
+  string robot_id = 2;
+}
+
+message CompleteTaskResponse {
+  string confirmation_message = 1;
+}
+
+enum RobotStatus {
+  IDLE = 0;
+  MOVING = 1;
+  CHARGING = 2;
+  ERROR = 3;
+}
