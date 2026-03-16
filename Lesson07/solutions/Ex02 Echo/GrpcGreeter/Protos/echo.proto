@@ -4,18 +4,22 @@ option csharp_namespace = "GrpcEcho";
 
 package echo;
 
+import "google/protobuf/timestamp.proto";
+
 // The greeting service definition.
 service Echo {
   // Sends a greeting
   rpc Echo (EchoRequest) returns (EchoResponse);
 }
 
-// The request message containing the user's name.
+// The request message containing the user's message.
 message EchoRequest {
-  string name = 1;
+  string message = 1;
+  google.protobuf.Timestamp time_stamp = 2;
 }
 
-// The response message containing the greetings.
+// The response message containing the message.
 message EchoResponse {
   string message = 1;
+  google.protobuf.Timestamp time_stamp = 2;
 }

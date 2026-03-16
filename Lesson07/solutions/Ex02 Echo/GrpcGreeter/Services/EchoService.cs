@@ -1,3 +1,4 @@
+using Google.Protobuf.WellKnownTypes;
 using Grpc.Core;
 using GrpcEcho;
 
@@ -13,9 +14,17 @@ public class EchoService : Echo.EchoBase
 
     public override Task<EchoResponse> Echo(EchoRequest request, ServerCallContext context)
     {
+        if (string.IsNullOrEmpty(request.Message))
+        {
+            throw new RpcException(new Status(StatusCode.InvalidArgument, "Message is required."));
+        }
+
+        Timestamp timestamp = request.TimeStamp ?? Timestamp.FromDateTime(DateTime.UtcNow);
+
         return Task.FromResult(new EchoResponse
         {
-            Message = "You said: " + request.Name
+            Message = "You said: " + request.Message,
+            TimeStamp = timestamp
         });
     }
 }
