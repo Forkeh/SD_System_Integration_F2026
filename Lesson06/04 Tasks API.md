@@ -51,3 +51,5 @@ Delete a task
   "query": "mutation{ deleteTask(title:\"Test the API\"){ success deletedTask{ title completed } } }"
 }
 ```
+
+**Proposed solution**: [Python](https://github.com/arturomorarioja/py_tasks_graphql_api)

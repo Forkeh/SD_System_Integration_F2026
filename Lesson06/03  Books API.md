@@ -49,3 +49,5 @@ Add a book
   "query": "mutation { addBook(title: \"Dune\", author: \"Frank Herbert\") { success book { title author } } }"
 }
 ```
+
+**Proposed solution**: [Python](https://github.com/arturomorarioja/py_books_graphql_api)
