@@ -2,15 +2,6 @@
 
 # Lesson 7 - 16 March
 
-[Download gRPC slides]: #
-[git pull all code samples]: #
-[git pull 1MA code: https://github.com/arturomorarioja/py_grpc_library and https://github.com/arturomorarioja/php_soap_library]: #
-[Make sure that grpcurl is installed: https://github.com/fullstorydev/grpcurl]: #
-
-[Homework solutions: Countries queries, Movie Streaming part II queries, ask about how they solved Books, Tasks]: #
-
-[Slides: gRPC]: #
-
 [1MA]: #
 
 ### Recommendation
@@ -25,3 +16,10 @@ The best programming language to Work with gRPC is Go (Golang). If you want to g
 
 ### Homework
 - Check out the **gRPC** slides
+- Check out the following Protocol Buffer examples:
+  - [Telemedicine service](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson07/telemedicine_service.proto)
+  - [Telemedicine service - extended](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson07/telemedicine_service_extended.proto)
+- Check out the following code samples:
+  - [Greeter service (Go)](https://github.com/arturomorarioja/go_grpc_greeter_src). You can follow the README to generate the stubs and package
+  - [Greeter service (Go)](https://github.com/arturomorarioja/go_grpc_greeter). Ready-made version
+  - [Rides (Python)](https://github.com/arturomorarioja/py_grpc_rides). Follow the README to try partial demos, then run the client's unary `Start` request and streaming `Track` request
