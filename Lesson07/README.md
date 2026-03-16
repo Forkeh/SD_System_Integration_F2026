@@ -18,3 +18,9 @@
 The best programming language to Work with gRPC is Go (Golang). If you want to give it a try:
 1. [Install Go](https://go.dev/dl/)
 2. Install gRPC: `go install github.com/fullstorydev/grpcurl/cmd/grpcurl@latest`
+
+### In-class exercise
+- Protocol buffers: [Warehouse Robot Service](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson07/01%20Warehouse%20Robot.md)
+
+### Homework
+- Check out the **gRPC** slides
