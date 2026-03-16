@@ -2,6 +2,7 @@
 
 # Lesson 8 - 19 March
 
-[gRPC homework solutions]: #
+[gRPC homework solutions: Echo, Echo with Validation, Quiz]: #
 
+[Ask about 1MA and group composition]: #
 [API Security slides]: #
