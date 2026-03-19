@@ -10,4 +10,8 @@
 ### Homework
 - Check out the first part of the **API Security** slides:
   - Security attacks
-- Check out the [OWASP WebGOAT](https://owasp.org/www-project-webgoat/), the [DVWA (Damn Vulnerable Web Application)](https://github.com/digininja/DVWA), [Hack This Site](https://www.hackthissite.org/), or my own [Vulnerable Web Application](https://github.com/arturomorarioja/php_vulnerable_app)
+- Check out any or several of the following insecure web application for practice:
+  - [OWASP WebGOAT](https://owasp.org/www-project-webgoat/)
+  - [DVWA (Damn Vulnerable Web Application)](https://github.com/digininja/DVWA)
+  - [Hack This Site](https://www.hackthissite.org/)
+  - My own [Vulnerable Web Application](https://github.com/arturomorarioja/php_vulnerable_app)
