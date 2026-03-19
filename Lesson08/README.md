@@ -2,6 +2,8 @@
 
 # Lesson 8 - 19 March
 
-[gRPC homework solutions]: #
-
 [API Security slides]: #
+
+### Homework
+Check out the first part of the **API Security** slides:
+- Security attacks

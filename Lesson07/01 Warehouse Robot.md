@@ -30,3 +30,58 @@ Write the corresponding `warehouse_robot_service.proto` file.
     - The server returns: `confirmation_message`
 
 Define an enum for robot `status`: `IDLE`, `MOVING`, `CHARGING`, `ERROR`.
+
+## Solution
+
+```proto
+syntax = "proto3";
+
+package warehouse_robot;
+
+service WarehouseRobotService {
+  rpc AssignTask(AssignTaskRequest) returns (AssignTaskResponse);
+  rpc GetRobotStatus(GetRobotStatusRequest) returns (GetRobotStatusResponse);
+  rpc CompleteTask(CompleteTaskRequest) returns (CompleteTaskResponse);
+}
+
+message AssignTaskRequest {
+  string robot_id = 1;
+  string task_id = 2;
+  string pickup_zone = 3;
+  string delivery_zone = 4;
+  string box_id = 5;
+}
+
+message AssignTaskResponse {
+  string confirmation_message = 1;
+  string assigned_task_id = 2;
+}
+
+message GetRobotStatusRequest {
+  string robot_id = 1;
+}
+
+message GetRobotStatusResponse {
+  string robot_id = 1;
+  string current_zone = 2;
+  int32 battery_level = 3;
+  RobotStatus status = 4;
+}
+
+message CompleteTaskRequest {
+  string task_id = 1;
+  string robot_id = 2;
+}
+
+message CompleteTaskResponse {
+  string confirmation_message = 1;
+}
+
+enum RobotStatus {
+  ROBOT_STATUS_UNSPECIFIED = 0;
+  IDLE = 1;
+  MOVING = 2;
+  CHARGING = 3;
+  ERROR = 4;
+}
+```
