@@ -50,3 +50,14 @@ A logged-in user can change their email address from a browser form. The browser
 
 **Feature F — Search**  
 Users can search the product catalogue by entering free text.
+
+### Solution
+
+|Feature|Primary concern|Best protection 1|Best protection 2|
+|-|-|-|-|
+|A - Relevant action buttons|Clickjacking|`frame-ancestors` CSP|CSRF token|
+|B - Session-based login|Session hijacking|HTTPS|`SameSite` cookies|
+|C - Comments|XSS|Output encoding/escaping|Input validation|
+|D - Image upload|Oversized payloads|Request size limits|Restricting allowed upload types|
+|E - Profile update|CSRF|CSRF token|`SameSite` cookies|
+|F - Search|SQL-injection|Parameterised database queries|Input validation|
