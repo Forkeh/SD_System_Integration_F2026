@@ -5,3 +5,6 @@
 [Homework solutions: Bearer token / then Secure API]: #
 
 [API Security slides]: #
+[  CORS first + in-class ex]: #
+[  Then JWT + in-class ex]: #
+[  Then OAuth + homework]: #
