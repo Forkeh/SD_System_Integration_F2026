@@ -10,3 +10,9 @@
 
 ### In-class exercise
 - [CORS](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/01%20CORS.md)
+
+### Homework
+- Check out the **API Security** slides with especial attention to:
+  - CORS
+  - JWT authentication
+  - OAuth2/OIDC authentication/authorization
