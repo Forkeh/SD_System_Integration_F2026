@@ -2,13 +2,18 @@
 
 # Lesson 9 - 26 March
 
-[Download API Security slides]: #
-[git pull/clone js_sop_cors, js_cors_preflight, to_dos_jwt]: #
+### In-class exercise
+- [CORS](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/01%20CORS.md)
 
-[Homework solutions: Bearer token / then Secure API]: #
-
-[API Security slides]: #
-[  CORS first + in-class ex(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/01%20CORS.md)]: #
-
-[  Then JWT + in-class ex(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/02%20JWT%20To%20Do%20list.md)]: #
-[  Then OAuth + homework]: #
+### Homework
+- Check out the **API Security** slides with especial attention to:
+  - CORS
+  - JWT authentication
+  - OAuth2/OIDC authentication/authorization
+- Check out the following code samples
+  - [SOP](https://github.com/arturomorarioja/js_sop_cors)
+  - [CORS preflight requests](https://github.com/arturomorarioja/js_cors_preflight)
+- Solve the following exercises:
+  - [JWT To Do list](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/02%20JWT%20To%20Do%20list.md)
+  - [OAuth2 To Do list](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/03%20OAuth2%20To%20Do%20list.md)
+  - Keep working on the First Mandatory Assignment
