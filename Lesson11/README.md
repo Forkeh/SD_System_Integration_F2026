@@ -2,6 +2,8 @@
 
 # Lesson 11 - 16 April
 
+[Download OpenAPI slides]: #
+
 [  - Book resource(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson11/01%20Book%20resource.md)]: #
 [  - Online teaching system(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson11/02%20Online%20teaching%20system.md)]: #
 [  - Hotel details(https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson11/03%20Hotel%20details.md)]: #
