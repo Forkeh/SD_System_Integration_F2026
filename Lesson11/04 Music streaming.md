@@ -67,6 +67,7 @@ Schemas
 components:
   schemas:
     AlbumSummary:
+      type: object
       required:
         - id
         - name
@@ -84,6 +85,7 @@ components:
         comment:
           type: string
     ArtistSummary:
+      type: object
       required:
         - id
         - name
