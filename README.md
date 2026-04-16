@@ -14,5 +14,5 @@
 - [Lesson 8](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson08/README.md) (19 March): API Security part I: Attacks, HTTP and Token-Based Auth
 - [Lesson 9](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson09/README.md) (26 March): API Security part II: Browser Policies, JWT and OAuth Auth
 - Lesson 10 (9 April): Student presentations
-- [Lesson 11](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson11/README.md) (16 April): API Documentation. OpenAPI 
-- [Lesson 12](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson12/README.md) (23 April): WebSockets. Database Replication, Partitioning, and Sharding
+- [Lesson 11](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson11/README.md) (16 April): Distributed Databases. API Documentation. OpenAPI 
+- [Lesson 12](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson12/README.md) (23 April): WebSockets. Course Recap
