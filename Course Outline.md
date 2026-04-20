@@ -50,6 +50,12 @@
 - QUIC
 - SSL/TLS
 
+**HTTP**
+- HTTP/1.1
+- HTTP/2
+- HTTP/3
+- HTTPS
+
 **REST**
 - Constraints
   - Client-Server Architecture
