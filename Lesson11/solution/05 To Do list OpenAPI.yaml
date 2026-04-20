@@ -1,0 +1,279 @@
+openapi: 3.0.3
+info:
+    title: Authenticated To Do List API
+    description: >
+        A REST API for managing a To Do list with bearer token authentication.
+        Users must log in to obtain a token before accessing task endpoints.
+    version: 1.0.0
+
+servers:
+    - url: http://localhost:5000
+      description: Local development server
+
+security:
+    - BearerAuth: []
+
+paths:
+    /auth/login:
+        post:
+            summary: Log in and obtain a bearer token
+            security: []
+            tags:
+                - Auth
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/LoginRequest'
+                        example:
+                            username: brian
+                            password: secret
+            responses:
+                '200':
+                    description: Login successful
+                    content:
+                        application/json:
+                            schema:
+                                type: object
+                                properties:
+                                    token:
+                                        type: string
+                                        example: a3f8d2e1b7c94f6a8e2d1b3c5f7a9e0d
+                '401':
+                    description: Invalid credentials
+
+    /auth/logout:
+        post:
+            summary: Log out and invalidate the current bearer token
+            tags:
+                - Auth
+            responses:
+                '204':
+                    description: Logout successful
+                '401':
+                    description: Missing or invalid token
+
+    /tasks:
+        get:
+            summary: Get a paginated list of tasks
+            tags:
+                - Tasks
+            parameters:
+                - name: page
+                  in: query
+                  description: Page number (1-based)
+                  schema:
+                      type: integer
+                      default: 1
+                      minimum: 1
+                - name: size
+                  in: query
+                  description: Number of tasks per page
+                  schema:
+                      type: integer
+                      default: 5
+                      minimum: 1
+            responses:
+                '200':
+                    description: A paginated list of tasks
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/PagedTasks'
+                '401':
+                    description: Missing or invalid token
+
+        post:
+            summary: Create a new task
+            tags:
+                - Tasks
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/TaskInput'
+                        example:
+                            id: 21
+                            task: Write OpenAPI docs
+                            done: false
+            responses:
+                '201':
+                    description: Task created
+                    headers:
+                        Location:
+                            description: URL of the created task
+                            schema:
+                                type: string
+                                example: /tasks/21
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Task'
+                '401':
+                    description: Missing or invalid token
+
+    /tasks/{id}:
+        parameters:
+            - name: id
+              in: path
+              required: true
+              description: Task ID
+              schema:
+                  type: integer
+
+        get:
+            summary: Get a task by ID
+            tags:
+                - Tasks
+            responses:
+                '200':
+                    description: The requested task
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Task'
+                '401':
+                    description: Missing or invalid token
+                '404':
+                    description: Task not found
+
+        put:
+            summary: Replace a task by ID
+            tags:
+                - Tasks
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/TaskInput'
+                        example:
+                            id: 1
+                            task: Learn REST APIs thoroughly
+                            done: true
+            responses:
+                '200':
+                    description: Task updated
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Task'
+                '401':
+                    description: Missing or invalid token
+                '404':
+                    description: Task not found
+
+        delete:
+            summary: Delete a task by ID
+            tags:
+                - Tasks
+            responses:
+                '204':
+                    description: Task deleted
+                '401':
+                    description: Missing or invalid token
+                '404':
+                    description: Task not found
+
+components:
+    securitySchemes:
+        BearerAuth:
+            type: http
+            scheme: bearer
+
+    schemas:
+        LoginRequest:
+            type: object
+            required:
+                - username
+                - password
+            properties:
+                username:
+                    type: string
+                    example: brian
+                password:
+                    type: string
+                    format: password
+                    example: secret
+
+        Link:
+            type: object
+            properties:
+                rel:
+                    type: string
+                    example: self
+                href:
+                    type: string
+                    example: /tasks/1
+                method:
+                    type: string
+                    example: GET
+
+        Task:
+            type: object
+            properties:
+                id:
+                    type: integer
+                    example: 1
+                task:
+                    type: string
+                    example: Learn REST APIs
+                done:
+                    type: boolean
+                    example: false
+                _links:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/Link'
+                    example:
+                        - rel: self
+                          href: /tasks/1
+                          method: GET
+                        - rel: update
+                          href: /tasks/1
+                          method: PUT
+                        - rel: delete
+                          href: /tasks/1
+                          method: DELETE
+                        - rel: collection
+                          href: /tasks
+                          method: GET
+
+        TaskInput:
+            type: object
+            required:
+                - id
+                - task
+                - done
+            properties:
+                id:
+                    type: integer
+                    example: 1
+                task:
+                    type: string
+                    example: Learn REST APIs
+                done:
+                    type: boolean
+                    example: false
+
+        PagedTasks:
+            type: object
+            properties:
+                page:
+                    type: integer
+                    example: 1
+                size:
+                    type: integer
+                    example: 5
+                totalCount:
+                    type: integer
+                    example: 20
+                totalPages:
+                    type: integer
+                    example: 4
+                data:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/Task'

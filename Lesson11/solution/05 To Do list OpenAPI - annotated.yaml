@@ -1,0 +1,455 @@
+# =============================================================================
+# OPENAPI DOCUMENT STRUCTURE REFERENCE
+# =============================================================================
+# An OpenAPI 3.x document is a YAML (or JSON) file with these top-level keys:
+#
+#   openapi   – version of the OpenAPI spec being used
+#   info      – metadata about the API (title, version, description, etc.)
+#   servers   – base URLs the API is available at
+#   security  – global security requirement applied to all paths by default
+#   paths     – the actual endpoints (routes) and their operations
+#   components – reusable definitions (schemas, security schemes, parameters, etc.)
+# =============================================================================
+
+
+# --- openapi ---
+# Declares the OpenAPI Specification version.
+# Always use a 3.x string here (e.g. "3.0.3" or "3.1.0").
+openapi: 3.0.3
+
+
+# --- info ---
+# Metadata about the API. Only 'title' and 'version' are required.
+# Optional fields: description, termsOfService, contact, license.
+info:
+    title: Authenticated To Do List API
+
+    # 'description' supports Markdown. Use '>' for a folded scalar (newlines
+    # become spaces) or '|' for a literal scalar (newlines preserved).
+    description: >
+        A REST API for managing a To Do list with bearer token authentication.
+        Users must log in to obtain a token before accessing task endpoints.
+
+    # 'version' is the version of YOUR API, not the OpenAPI spec version.
+    version: 1.0.0
+
+
+# --- servers ---
+# One or more base URLs where the API is hosted.
+# All 'paths' are relative to these URLs.
+# You can list multiple servers (dev, staging, production).
+servers:
+    - url: http://localhost:5000
+      description: Local development server
+
+
+# --- security (global) ---
+# Applies a security requirement to ALL operations by default.
+# Each entry is a map of { securitySchemeName: [scopes] }.
+# For non-OAuth schemes (like Bearer), the scopes array is always empty [].
+#
+# Individual operations can OVERRIDE this by setting their own 'security'
+# field — including 'security: []' to opt out entirely (e.g. the login endpoint).
+security:
+    - BearerAuth: []
+
+
+# =============================================================================
+# PATHS
+# =============================================================================
+# 'paths' contains every endpoint the API exposes.
+# Each key is a path (e.g. /tasks/{id}), and its value is a map of
+# HTTP methods (get, post, put, delete, patch, …) to operation objects.
+# =============================================================================
+paths:
+
+    # -------------------------------------------------------------------------
+    # PATH ITEM: /auth/login
+    # -------------------------------------------------------------------------
+    /auth/login:
+
+        # Each HTTP method under a path is called an "operation".
+        post:
+            # 'summary' is a short, human-readable label shown in docs tools.
+            summary: Log in and obtain a bearer token
+
+            # 'security: []' OVERRIDES the global security requirement,
+            # making this endpoint publicly accessible (no token needed).
+            security: []
+
+            # 'tags' group operations together in documentation UIs (e.g. Swagger UI).
+            # Operations with the same tag appear under the same section.
+            tags:
+                - Auth
+
+            # 'requestBody' describes the body the client must send.
+            requestBody:
+                # required: true means the body MUST be present.
+                required: true
+                content:
+                    # The media type (MIME type) of the request body.
+                    # 'application/json' is the most common for REST APIs.
+                    application/json:
+                        # 'schema' defines the shape/type of the body.
+                        # '$ref' is a JSON Reference — it points to a schema
+                        # defined in components/schemas instead of repeating it here.
+                        schema:
+                            $ref: '#/components/schemas/LoginRequest'
+                        # 'example' provides a sample value shown in docs.
+                        # This example is at the media-type level (overrides any
+                        # example inside the schema itself).
+                        example:
+                            username: brian
+                            password: secret
+
+            # 'responses' lists all possible HTTP status code responses.
+            # At least one response is required. Keys are strings ("200", not 200).
+            responses:
+                '200':
+                    description: Login successful
+                    content:
+                        application/json:
+                            # An inline schema (no $ref needed for simple one-off shapes).
+                            schema:
+                                type: object
+                                properties:
+                                    token:
+                                        type: string
+                                        example: a3f8d2e1b7c94f6a8e2d1b3c5f7a9e0d
+                '401':
+                    # A response with no body only needs a 'description'.
+                    description: Invalid credentials
+
+    # -------------------------------------------------------------------------
+    # PATH ITEM: /auth/logout
+    # -------------------------------------------------------------------------
+    /auth/logout:
+        post:
+            summary: Log out and invalidate the current bearer token
+            tags:
+                - Auth
+            # No 'security' override here, so the global BearerAuth applies —
+            # you must send a valid token to log out.
+            responses:
+                '204':
+                    # 204 No Content means the action succeeded but returns no body.
+                    description: Logout successful
+                '401':
+                    description: Missing or invalid token
+
+    # -------------------------------------------------------------------------
+    # PATH ITEM: /tasks
+    # -------------------------------------------------------------------------
+    /tasks:
+        get:
+            summary: Get a paginated list of tasks
+            tags:
+                - Tasks
+
+            # 'parameters' describes inputs sent outside the request body:
+            # query string (?page=2), path segments ({id}), headers, or cookies.
+            parameters:
+                - name: page          # Must match the query param name exactly.
+                  in: query           # Where the param lives: query|path|header|cookie
+                  description: Page number (1-based)
+                  # 'required' defaults to false for query params.
+                  # Path params MUST have required: true.
+                  schema:
+                      type: integer
+                      default: 1      # Value used if the client omits this param.
+                      minimum: 1      # JSON Schema validation constraint.
+
+                - name: size
+                  in: query
+                  description: Number of tasks per page
+                  schema:
+                      type: integer
+                      default: 5
+                      minimum: 1
+
+            responses:
+                '200':
+                    description: A paginated list of tasks
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/PagedTasks'
+                '401':
+                    description: Missing or invalid token
+
+        post:
+            summary: Create a new task
+            tags:
+                - Tasks
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/TaskInput'
+                        example:
+                            id: 21
+                            task: Write OpenAPI docs
+                            done: false
+            responses:
+                '201':
+                    # 201 Created — standard response when a new resource is created.
+                    description: Task created
+                    # 'headers' documents response headers the server sends back.
+                    headers:
+                        Location:
+                            # REST convention: Location header points to the new resource.
+                            description: URL of the created task
+                            schema:
+                                type: string
+                                example: /tasks/21
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Task'
+                '401':
+                    description: Missing or invalid token
+
+    # -------------------------------------------------------------------------
+    # PATH ITEM: /tasks/{id}
+    # -------------------------------------------------------------------------
+    # Curly braces denote a PATH PARAMETER. The name inside must match a
+    # parameter entry with 'in: path' somewhere on this path item or operation.
+    /tasks/{id}:
+
+        # Parameters defined at the PATH ITEM level (here, not inside an operation)
+        # are shared by ALL operations on this path — DRY principle.
+        parameters:
+            - name: id
+              in: path              # Path params are always required: true.
+              required: true
+              description: Task ID
+              schema:
+                  type: integer
+
+        get:
+            summary: Get a task by ID
+            tags:
+                - Tasks
+            responses:
+                '200':
+                    description: The requested task
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Task'
+                '401':
+                    description: Missing or invalid token
+                '404':
+                    description: Task not found
+
+        put:
+            # PUT replaces the entire resource (idempotent).
+            # Use PATCH for partial updates.
+            summary: Replace a task by ID
+            tags:
+                - Tasks
+            requestBody:
+                required: true
+                content:
+                    application/json:
+                        schema:
+                            $ref: '#/components/schemas/TaskInput'
+                        example:
+                            id: 1
+                            task: Learn REST APIs thoroughly
+                            done: true
+            responses:
+                '200':
+                    description: Task updated
+                    content:
+                        application/json:
+                            schema:
+                                $ref: '#/components/schemas/Task'
+                '401':
+                    description: Missing or invalid token
+                '404':
+                    description: Task not found
+
+        delete:
+            summary: Delete a task by ID
+            tags:
+                - Tasks
+            responses:
+                '204':
+                    description: Task deleted
+                '401':
+                    description: Missing or invalid token
+                '404':
+                    description: Task not found
+
+
+# =============================================================================
+# COMPONENTS
+# =============================================================================
+# A reusable library for the document. Anything defined here can be referenced
+# elsewhere with $ref: '#/components/<section>/<name>'.
+#
+# Common sections:
+#   schemas         – data shapes (request/response bodies, shared objects)
+#   securitySchemes – how the API is secured (API key, OAuth2, Bearer, etc.)
+#   parameters      – reusable query/path/header parameters
+#   responses       – reusable response objects
+#   requestBodies   – reusable request body objects
+#   headers         – reusable response headers
+# =============================================================================
+components:
+
+    # -------------------------------------------------------------------------
+    # SECURITY SCHEMES
+    # -------------------------------------------------------------------------
+    # Defines the authentication mechanisms available to the API.
+    # These are referenced by name in the global 'security' field or per-operation.
+    securitySchemes:
+
+        BearerAuth:
+            # 'http' means it uses the HTTP Authorization header.
+            type: http
+            # 'bearer' means the format is: Authorization: Bearer <token>
+            # Other http schemes: 'basic' (username:password base64 encoded)
+            scheme: bearer
+
+            # For OAuth2, you would use type: oauth2 with 'flows'.
+            # For an API key in a header: type: apiKey, in: header, name: X-API-Key
+
+    # -------------------------------------------------------------------------
+    # SCHEMAS
+    # -------------------------------------------------------------------------
+    # Schemas are JSON Schema (draft 7/2020) definitions.
+    # Common keywords:
+    #   type        – string | integer | number | boolean | array | object
+    #   properties  – fields of an object
+    #   required    – list of field names that MUST be present
+    #   items       – schema for elements when type is 'array'
+    #   $ref        – reference to another schema
+    #   example     – a sample value for documentation
+    #   format      – hints at specific string/number formats (date, email, password…)
+    #   minimum/maximum – numeric range constraints
+    #   minLength/maxLength – string length constraints
+    #   enum        – list of allowed values
+    # -------------------------------------------------------------------------
+    schemas:
+
+        # --- LoginRequest ---
+        # Used as the request body schema for POST /auth/login.
+        LoginRequest:
+            type: object
+            # 'required' lists the property names that must be present.
+            # Omitting a field listed here is a validation error.
+            required:
+                - username
+                - password
+            properties:
+                username:
+                    type: string
+                    example: brian
+                password:
+                    type: string
+                    # 'format: password' hints to UIs that this should be masked.
+                    # It does NOT enforce anything server-side — it is documentation only.
+                    format: password
+                    example: secret
+
+        # --- Link ---
+        # Represents a single HATEOAS hypermedia link.
+        # HATEOAS (Hypermedia as the Engine of Application State) embeds links
+        # in responses so clients can discover available actions dynamically.
+        Link:
+            type: object
+            properties:
+                rel:
+                    # 'rel' (relation) describes what the link means
+                    # (e.g. "self", "update", "delete", "collection").
+                    type: string
+                    example: self
+                href:
+                    # 'href' is the URL of the linked resource or action.
+                    type: string
+                    example: /tasks/1
+                method:
+                    # 'method' is the HTTP verb to use with this link.
+                    type: string
+                    example: GET
+
+        # --- Task ---
+        # The full task object returned by the API (includes _links).
+        Task:
+            type: object
+            properties:
+                id:
+                    type: integer
+                    example: 1
+                task:
+                    type: string
+                    example: Learn REST APIs
+                done:
+                    type: boolean
+                    example: false
+                _links:
+                    # An array whose items each conform to the Link schema.
+                    type: array
+                    items:
+                        # '$ref' here reuses the Link schema defined above.
+                        $ref: '#/components/schemas/Link'
+                    example:
+                        - rel: self
+                          href: /tasks/1
+                          method: GET
+                        - rel: update
+                          href: /tasks/1
+                          method: PUT
+                        - rel: delete
+                          href: /tasks/1
+                          method: DELETE
+                        - rel: collection
+                          href: /tasks
+                          method: GET
+
+        # --- TaskInput ---
+        # The body sent by the client when creating or updating a task.
+        # Kept separate from Task so _links is not required on input.
+        TaskInput:
+            type: object
+            required:
+                - id
+                - task
+                - done
+            properties:
+                id:
+                    type: integer
+                    example: 1
+                task:
+                    type: string
+                    example: Learn REST APIs
+                done:
+                    type: boolean
+                    example: false
+
+        # --- PagedTasks ---
+        # Wrapper object returned by GET /tasks.
+        # Wrapping paged results in an envelope object (instead of returning a
+        # raw array) allows metadata (page, totalCount, etc.) to be included.
+        PagedTasks:
+            type: object
+            properties:
+                page:
+                    type: integer
+                    example: 1
+                size:
+                    type: integer
+                    example: 5
+                totalCount:
+                    type: integer
+                    example: 20
+                totalPages:
+                    type: integer
+                    example: 4
+                data:
+                    type: array
+                    items:
+                        $ref: '#/components/schemas/Task'
