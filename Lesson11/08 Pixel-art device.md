@@ -5,3 +5,42 @@ brightness percentage between 0 and 1 (0.3, for example), and an `on` flag. All 
 and Pixel reusable schemas with OpenAPI. 
 
 <sub>From Lauret, Arnaud (2025). *The Design of Web APIs*, 2nd ed.</sub>
+
+### Solution
+
+```yaml
+components:
+  schemas:
+    Screen:
+      type: object
+      required:
+        - id
+        - pixels
+      properties:
+        id:
+          type: string
+        pixels:
+          $ref: "#/components/schemas/Pixels"
+    Pixels:
+      description: A matrix of pixels (array of array)
+      type: array
+      items:
+        type: array
+        items:
+          $ref: "#/components/schemas/Pixel"
+    Pixel:
+      type: object
+      required:
+        - rgb
+        - on
+      properties:
+        rgb:
+          description: "[r, g, b]"
+          type: array
+          items:
+            type: integer
+        brightness:
+          type: number
+        on:
+          type: boolean
+```

@@ -16,3 +16,6 @@
 - Lesson 10 (9 April): Student presentations
 - [Lesson 11](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson11/README.md) (16 April): Distributed Databases. API Documentation. OpenAPI 
 - [Lesson 12](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Lesson12/README.md) (23 April): WebSockets. Course Recap
+
+### Content
+- [Course Outline](https://github.com/arturomorarioja-ek/SD_System_Integration_F2026/blob/main/Course%20Outline.md)

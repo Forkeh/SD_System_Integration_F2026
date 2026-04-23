@@ -6,3 +6,6 @@ Implement JWT authentication in the To Do list REST API with the following requi
 - All other endpoints must be authenticated via the JWT as a bearer token
 - Logout endpoint: `/auth/logout`
 - User creation is not necessary
+
+### Solution
+[SQLite/Redis/Python/Flask](https://github.com/arturomorarioja/auth_jwt_to_do_list_rest_api)

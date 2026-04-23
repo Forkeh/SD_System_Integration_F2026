@@ -30,3 +30,68 @@ Content-Type: application/json
 ```
 
 <sub>From Lauret, Arnaud (2025). *The Design of Web APIs*, 2nd ed.</sub>
+
+### Solution
+
+Operation description
+```yaml
+paths:
+  /artists/{artistId}/albums:
+    parameters:
+      - name: artistId
+        in: path
+        required: true
+        schema:
+          type: string
+    get:
+      summary: Search an artist's albums
+      parameters:
+        - name: releaseYear
+          in: query
+          required: false
+          schema:
+            type: integer
+      responses:
+        "200":
+          description: Albums found
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  $ref: "#/components/schemas/AlbumSummary"
+```
+
+Schemas
+```yaml
+components:
+  schemas:
+    AlbumSummary:
+      type: object
+      required:
+        - id
+        - name
+        - mainArtist
+        - releaseYear
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+        mainArtist:
+          $ref: "#/components/schemas/ArtistSummary"
+        releaseYear:
+          type: integer
+        comment:
+          type: string
+    ArtistSummary:
+      type: object
+      required:
+        - id
+        - name
+      properties:
+        id:
+          type: string
+        name:
+          type: string
+```
